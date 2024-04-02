@@ -1,0 +1,1411 @@
+,Image,RAM_Tags,YOLO_Tags
+0,84.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,"11 car, 1 truck"
+1,98.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"6 car, 1 truck"
+2,112.jpg,car | city | city street | crosswalk | intersection | road | street sign | traffic sign,"7 car, 1 truck"
+3,126.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"9 car, 1 truck"
+4,140.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 7 car, 1 truck"
+5,154.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | street sign | walk,6 car
+6,168.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"6 car, 1 truck"
+7,182.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"4 person, 7 car, 1 truck"
+8,196.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"1 person, 7 car, 2 truck"
+9,210.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | street sign | walk,"2 person, 8 car, 1 truck"
+10,224.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street corner | street sign,"7 car, 1 truck"
+11,238.jpg,car | city | city street | cross | crosswalk | intersection | man | road | street corner | street sign | traffic sign,"2 person, 6 car, 1 truck"
+12,252.jpg,biker | car | city street | cross | crosswalk | direct | person | intersection | man | ride | road,"2 person, 5 car, 1 truck"
+13,266.jpg,black | car | city street | cross | crosswalk | drive | intersection | road | stop light | traffic light,"2 person, 5 car, 1 truck"
+14,280.jpg,car | city street | construction worker | cross | crosswalk | direct | drive | intersection | man | road,"2 person, 4 car, 1 truck"
+15,294.jpg,car | city street | cross | crosswalk | direct | drive | intersection | man | road,"2 person, 4 car, 1 truck"
+16,308.jpg,car | city street | cross | crosswalk | drive | intersection | man | road,"2 person, 4 car, 1 truck"
+17,322.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"6 car, 1 truck"
+18,336.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street corner,"7 car, 1 bus, 1 truck"
+19,350.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road,"5 car, 1 truck"
+20,364.jpg,car | city | city street | cross | crosswalk | intersection | man | road | street sign,"2 person, 7 car, 1 truck"
+21,378.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street corner | street sign,"8 car, 1 truck"
+22,392.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"5 car, 1 truck"
+23,406.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | traffic light | street corner | street sign | traffic sign | walk,"6 car, 1 truck"
+24,420.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street corner | street sign | walk,"4 car, 1 truck"
+25,434.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"1 person, 4 car, 1 truck"
+26,448.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street sign | walk,"5 car, 1 truck"
+27,462.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road,"2 person, 4 car, 1 truck"
+28,476.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road,"3 car, 1 truck"
+29,490.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | street sign,"1 person, 3 car, 1 truck"
+30,504.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street sign,"1 person, 5 car, 1 truck"
+31,518.jpg,car | city street | construction worker | cross | crosswalk | direct | person | intersection | man | road | traffic cone,"1 person, 4 car, 1 truck"
+32,532.jpg,car | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"1 person, 5 car, 1 truck"
+33,546.jpg,car | city street | cross | crosswalk | intersection | man | road | traffic light | street corner | street sign,"1 person, 6 car, 1 truck"
+34,560.jpg,car | cross | crosswalk | person | intersection | man | road | walk | woman | zebra crossing,"1 person, 7 car"
+35,574.jpg,bag | blue | cross | crosswalk | person | luggage | man | road | walk | woman | zebra crossing,"1 person, 3 car, 1 truck"
+36,588.jpg,bag | blue | carry | cross | crosswalk | girl | person | luggage | road | walk | woman | zebra crossing,"1 person, 4 car, 1 truck"
+37,602.jpg,bag | blue | carry | cross | crosswalk | luggage | road | walk | woman | zebra crossing,"1 person, 4 car, 1 truck, 1 handbag"
+38,616.jpg,bag | blue | carry | cross | crosswalk | girl | luggage | pull | road | walk | woman | zebra crossing,"1 person, 2 car, 1 truck"
+39,630.jpg,cross | crosswalk | person | man | road | skateboarder | woman,"1 person, 3 car, 1 truck"
+40,644.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"8 car, 1 truck"
+41,658.jpg,ambulance | car | city | city street | crosswalk | intersection | road | stop light | traffic light | street corner | street sign | traffic sign,"8 car, 1 truck"
+42,672.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"7 car, 1 truck"
+43,686.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street sign,"7 car, 1 truck"
+44,700.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street sign | traffic sign,"6 car, 1 truck"
+45,714.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street sign | walk,"10 car, 1 truck"
+46,728.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"7 car, 1 truck"
+47,742.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"7 car, 1 truck"
+48,756.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,7 car
+49,770.jpg,car | city | city street | cross | crosswalk | intersection | road | street sign | traffic sign,4 car
+50,784.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+51,798.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+52,812.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,4 car
+53,826.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+54,840.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+55,854.jpg,city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,6 car
+56,868.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,5 car
+57,882.jpg,building | city | city street | crosswalk | curve | intersection | road | traffic light | street corner | street sign | traffic sign,4 car
+58,896.jpg,building | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,4 car
+59,910.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,5 car
+60,924.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,2 car
+61,938.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"3 car, 1 truck"
+62,952.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car, 1 truck"
+63,966.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,3 car
+64,980.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"5 car, 2 truck"
+65,994.jpg,city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"1 person, 2 car, 1 truck, 1 traffic light"
+66,1008.jpg,car | city | city street | crosswalk | intersection | road | stop light | traffic light | street corner | street sign | traffic sign,"2 car, 1 truck, 1 traffic light"
+67,1022.jpg,city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"4 car, 1 truck"
+68,1036.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 car, 1 truck"
+69,1050.jpg,car | city | city street | crosswalk | intersection | road | street sign | traffic sign,"1 person, 2 car, 1 truck"
+70,1064.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 2 car, 1 truck"
+71,1078.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 car, 1 truck"
+72,1092.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,4 car
+73,1106.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,5 car
+74,1120.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+75,1134.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car"
+76,1148.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,2 car
+77,1162.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+78,1176.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 2 car, 1 truck"
+79,1190.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car"
+80,1204.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 car, 1 truck"
+81,1218.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 4 car"
+82,1232.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,5 car
+83,1246.jpg,car | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 5 car"
+84,1260.jpg,car | city street | crosswalk | intersection | road | street corner | street sign,"2 person, 4 car"
+85,1274.jpg,car | city | city street | crosswalk | person | intersection | road | street corner | street sign,"4 person, 7 car"
+86,1288.jpg,car | city street | cross | crosswalk | person | intersection | man | road | street corner | street sign | walk,"3 person, 7 car"
+87,1302.jpg,car | city street | cross | crosswalk | person | intersection | man | road | street corner | walk,"5 person, 5 car"
+88,1316.jpg,car | city street | cross | crosswalk | person | intersection | man | road | walk,"4 person, 8 car"
+89,1330.jpg,car | cross | crosswalk | dress | person | intersection | road | walk | woman,"4 person, 7 car"
+90,1344.jpg,cross | crosswalk | dress | person | road | walk | woman,"3 person, 9 car"
+91,1358.jpg,car | cross | crosswalk | person | intersection | man | pedestrian | road | walk | woman,"3 person, 8 car"
+92,1372.jpg,car | cross | crosswalk | person | intersection | man | pedestrian | road | walk | woman,"3 person, 6 car"
+93,1386.jpg,car | cross | crosswalk | person | intersection | man | pedestrian | road | walk | woman,"4 person, 9 car"
+94,1400.jpg,car | cross | crosswalk | person | intersection | man | pedestrian | road | stand | street corner | walk | woman,"4 person, 8 car"
+95,1414.jpg,couple | cross | crosswalk | person | man | pedestrian | road | walk | woman,"3 person, 6 car"
+96,1428.jpg,cross | crosswalk | person | man | road | walk | woman,"4 person, 5 car"
+97,1442.jpg,cross | crosswalk | dress | person | pink | road | walk | woman,"4 person, 7 car"
+98,1456.jpg,couple | cross | crosswalk | person | man | road | walk | woman,"4 person, 5 car"
+99,1470.jpg,couple | cross | crosswalk | person | jog | man | road | walk | woman,"7 person, 7 car"
+100,1484.jpg,cross | crosswalk | dress | girl | person | jog | road | walk | woman | zebra crossing,"7 person, 4 car"
+101,1498.jpg,couple | cross | crosswalk | dress | person | man | road | walk | woman,"4 person, 7 car"
+102,1512.jpg,cross | crosswalk | dress | person | jog | man | road | walk | white | woman,"3 person, 8 car"
+103,1526.jpg,cross | crosswalk | dress | girl | jog | road | walk | white | woman | zebra crossing,"3 person, 8 car"
+104,1540.jpg,cross | crosswalk | dress | person | road | walk | wear | white | woman | zebra crossing,"4 person, 8 car"
+105,1554.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"3 person, 8 car"
+106,1568.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | walk,10 car
+107,1582.jpg,black | car | city | city street | cross | crosswalk | drive | intersection | road | suv,7 car
+108,1596.jpg,car | cross | crosswalk | person | intersection | pedestrian | road | stand | walk | woman,"3 person, 7 car"
+109,1610.jpg,car | cross | crosswalk | person | man | pedestrian | road | walk | woman,"4 person, 10 car, 1 backpack"
+110,1624.jpg,car | cross | crosswalk | person | intersection | man | pedestrian | road | walk | zebra crossing,"6 person, 5 car, 1 bench"
+111,1638.jpg,car | cross | crosswalk | girl | person | intersection | jog | road | walk | woman | zebra crossing,"7 person, 7 car, 1 backpack"
+112,1652.jpg,car | cross | crosswalk | person | intersection | pedestrian | road | walk,"8 person, 5 car, 2 backpack"
+113,1666.jpg,cross | crosswalk | person | intersection | pedestrian | road | walk | woman | zebra crossing,"9 person, 7 car, 1 backpack, 3 handbag, 1 skateboard"
+114,1680.jpg,cross | crosswalk | person | intersection | pedestrian | road | walk,"8 person, 6 car, 1 motorcycle, 1 backpack, 2 handbag"
+115,1694.jpg,cross | crosswalk | person | intersection | pedestrian | road | walk | zebra crossing,"9 person, 4 car, 1 backpack, 3 handbag"
+116,1708.jpg,cross | crosswalk | person | intersection | pedestrian | road | walk | zebra crossing,"12 person, 5 car, 2 backpack, 1 handbag, 1 skateboard"
+117,1722.jpg,cross | crosswalk | crowded | person | intersection | pedestrian | road | walk | zebra crossing,"10 person, 3 car, 1 truck, 2 backpack, 1 skateboard"
+118,1736.jpg,cross | crosswalk | crowded | person | intersection | pedestrian | road | walk | zebra crossing,"7 person, 5 car, 1 backpack, 1 handbag"
+119,1750.jpg,cross | crosswalk | crowded | person | intersection | pedestrian | road | walk | zebra crossing,"11 person, 2 car, 2 skateboard"
+120,1764.jpg,city street | cross | crosswalk | person | intersection | pedestrian | road | walk | zebra crossing,"10 person, 3 car, 1 truck"
+121,1778.jpg,cross | crosswalk | crowded | person | pedestrian | road | walk,"9 person, 5 car, 2 backpack, 2 handbag, 1 skateboard"
+122,1792.jpg,cross | crosswalk | crowded | person | pedestrian | road | walk | zebra crossing,"13 person, 3 car, 1 skateboard"
+123,1806.jpg,cross | crosswalk | person | pedestrian | student | road | walk | zebra crossing,"12 person, 3 car, 1 backpack, 2 handbag"
+124,1820.jpg,cross | crosswalk | crowded | person | intersection | pedestrian | road | walk | zebra crossing,"14 person, 4 car, 3 backpack, 1 handbag, 2 skateboard"
+125,1834.jpg,cross | crosswalk | person | intersection | pedestrian | road | walk | zebra crossing,"11 person, 6 car, 1 backpack, 2 skateboard"
+126,1848.jpg,cross | crosswalk | dress | person | pedestrian | road | walk,"8 person, 4 car"
+127,1862.jpg,cross | crosswalk | person | pedestrian | road | walk | woman | zebra crossing,"9 person, 4 car"
+128,1876.jpg,cross | crosswalk | crowded | person | man | pedestrian | road | walk | woman | zebra crossing,"10 person, 3 car"
+129,1890.jpg,cross | crosswalk | crowded | person | pedestrian | road | walk,"7 person, 7 car"
+130,1904.jpg,cross | crosswalk | person | man | pedestrian | ride | road | walk | zebra crossing,"10 person, 7 car, 2 skateboard"
+131,1918.jpg,cross | crosswalk | girl | person | intersection | pedestrian | road | walk | woman | zebra crossing,"9 person, 6 car"
+132,1932.jpg,cross | crosswalk | person | pedestrian | road | walk | woman | zebra crossing,"10 person, 9 car, 1 backpack, 1 handbag, 2 skateboard"
+133,1946.jpg,cross | crosswalk | person | pedestrian | road | walk,"9 person, 6 car, 2 backpack, 1 handbag"
+134,1960.jpg,cross | crosswalk | person | pedestrian | road | walk,"7 person, 5 car"
+135,1974.jpg,car | city street | cross | crosswalk | person | jog | pedestrian | road | walk,"7 person, 8 car, 1 backpack, 1 skateboard"
+136,1988.jpg,car | city | city street | cross | crosswalk | person | intersection | pedestrian | road | walk | zebra crossing,"8 person, 8 car, 1 truck"
+137,2002.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"6 person, 5 car"
+138,2016.jpg,car | city | city street | cross | crosswalk | person | intersection | pedestrian | road | walk,"6 person, 5 car"
+139,2030.jpg,car | city | city street | cross | crosswalk | person | intersection | pedestrian | road | walk,"4 person, 7 car"
+140,2044.jpg,car | city | city street | cross | crosswalk | person | intersection | pedestrian | road | walk,"7 person, 6 car"
+141,2058.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"4 person, 8 car"
+142,2072.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | walk,"5 person, 4 car"
+143,2086.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | walk,"4 person, 5 car"
+144,2100.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | walk,"4 person, 5 car"
+145,2114.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | skateboarder | walk,"5 person, 4 car"
+146,2128.jpg,cross | crosswalk | person | skate | jog | man | ride | road | skateboard | skateboarder,"6 person, 2 car, 1 skateboard"
+147,2142.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road,"4 person, 5 car, 1 motorcycle"
+148,2156.jpg,city | city street | crosswalk | curve | person | intersection | road | street corner | street sign,"1 person, 5 car"
+149,2170.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,7 car
+150,2184.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+151,2198.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+152,2212.jpg,city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+153,2226.jpg,city | city street | crosswalk | person | intersection | road | street corner | street sign | traffic sign,"1 person, 1 car"
+154,2240.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 3 car"
+155,2254.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car"
+156,2268.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 5 car"
+157,2282.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"2 person, 5 car"
+158,2296.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street sign | walk,"2 person, 4 car"
+159,2310.jpg,car | city | city street | construction worker | cross | crosswalk | person | intersection | road | street sign | traffic sign | walk,"4 person, 4 car"
+160,2324.jpg,car | city | city street | construction worker | crosswalk | intersection | man | road | street sign | traffic sign,"3 person, 3 car, 1 truck"
+161,2338.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street sign | traffic sign,"2 person, 3 car"
+162,2352.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street sign | traffic sign,"3 person, 3 car, 1 truck"
+163,2366.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street sign | traffic sign,"2 person, 1 car, 1 truck"
+164,2380.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street sign | walk,"2 person, 1 car, 1 truck"
+165,2394.jpg,biker | car | city | city street | cross | crosswalk | direct | person | intersection | man | ride | road | stand,"6 person, 3 car, 1 truck"
+166,2408.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"5 person, 3 car, 1 truck"
+167,2422.jpg,city | city street | cross | crosswalk | person | jog | leash | man | pedestrian | road | walk,"6 person, 3 car, 1 bus, 1 truck"
+168,2436.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | man | pedestrian | road | walk,"7 person, 5 car, 1 truck"
+169,2450.jpg,bicycle | biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"4 person, 4 car, 1 bus"
+170,2464.jpg,biker | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | skateboarder | walk,"5 person, 10 car, 1 bus"
+171,2478.jpg,city | city street | cross | crosswalk | person | intersection | jog | man | pedestrian | road | skateboarder | walk,"5 person, 10 car, 1 truck"
+172,2492.jpg,car | city street | cross | crosswalk | person | intersection | jog | pedestrian | road | walk | zebra crossing,"5 person, 5 car, 1 bus"
+173,2506.jpg,cross | crosswalk | person | intersection | pedestrian | road | walk | zebra crossing,"6 person, 5 car, 1 bus, 1 truck, 2 skateboard"
+174,2520.jpg,cross | crosswalk | person | intersection | pedestrian | road | walk | zebra crossing,"6 person, 4 car, 1 bus"
+175,2534.jpg,cross | crosswalk | person | intersection | pedestrian | road | walk,"7 person, 4 car, 1 bus"
+176,2548.jpg,cross | crosswalk | person | pedestrian | road | walk | zebra crossing,"7 person, 5 car, 1 bus, 1 backpack"
+177,2562.jpg,cross | crosswalk | person | intersection | man | pedestrian | road | walk | zebra crossing,"5 person, 3 car, 1 bus, 1 truck, 1 backpack, 1 handbag, 1 skateboard"
+178,2576.jpg,briefcase | couple | cross | crosswalk | hand | person | man | pedestrian | road | walk | woman | zebra crossing,"6 person, 5 car, 1 truck, 1 handbag"
+179,2590.jpg,cross | crosswalk | dress | girl | person | man | road | walk | woman | zebra crossing,"5 person, 5 car, 1 bus, 1 truck"
+180,2604.jpg,bag | brown | cross | crosswalk | girl | road | satchel | walk | woman,"2 person, 8 car, 1 bus, 1 truck, 1 handbag"
+181,2618.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | walk,"2 person, 4 car, 1 bus, 1 truck"
+182,2632.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"6 car, 1 bus, 1 truck"
+183,2646.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"4 car, 1 bus"
+184,2660.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"4 car, 1 bus"
+185,2674.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 car, 1 bus, 1 truck"
+186,2688.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 car, 1 bus, 1 truck"
+187,2702.jpg,building | car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"5 car, 1 bus"
+188,2716.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 4 car, 1 bus, 1 truck"
+189,2730.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"1 person, 4 car, 1 bus"
+190,2744.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 7 car, 1 bus, 1 truck"
+191,2758.jpg,building | car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"5 car, 1 bus"
+192,2772.jpg,building | car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"4 car, 1 bus"
+193,2786.jpg,building | car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"9 car, 1 bus"
+194,2800.jpg,car | city | city street | cross | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"4 car, 1 bus"
+195,2814.jpg,building | car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"6 car, 1 bus"
+196,2828.jpg,car | city | city street | cross | crosswalk | intersection | pole | road | street corner | street sign,"1 person, 3 car, 1 bus, 1 truck"
+197,2842.jpg,car | city | city street | cross | crosswalk | intersection | pole | road | traffic light | street corner | street sign | traffic sign,"2 person, 6 car, 1 bus"
+198,2856.jpg,city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | walk,"2 person, 7 car, 1 bus"
+199,2870.jpg,city | city street | cross | crosswalk | person | intersection | man | road | street corner | street sign | walk,"3 person, 7 car, 1 bus"
+200,2884.jpg,city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"2 person, 6 car, 1 bus, 1 truck"
+201,2898.jpg,city | city street | cross | crosswalk | person | intersection | jog | man | road | walk | woman,"2 person, 7 car, 1 bus, 1 truck"
+202,2912.jpg,city | city street | couple | cross | crosswalk | person | man | pedestrian | road | walk,"2 person, 5 car, 1 bus"
+203,2926.jpg,city | cross | crosswalk | person | man | pedestrian | road | walk | zebra crossing,"2 person, 6 car, 1 bus"
+204,2940.jpg,cross | crosswalk | person | man | road | skateboarder | walk,"2 person, 4 car, 1 bus"
+205,2954.jpg,couple | cross | crosswalk | hand | girl | person | man | road | walk | woman | zebra crossing,"3 person, 5 car, 1 bus"
+206,2968.jpg,couple | cross | crosswalk | hand | girl | person | man | road | walk | woman | zebra crossing,"2 person, 5 car, 1 bus"
+207,2982.jpg,cross | crosswalk | girl | person | jog | man | road | walk | woman | zebra crossing,"2 person, 3 car, 1 bus, 1 skateboard"
+208,2996.jpg,cross | crosswalk | person | man | ride | road | skateboarder | walk,"3 person, 4 car, 1 bus, 1 skateboard"
+209,3010.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road,"2 person, 5 car, 1 bus"
+210,3024.jpg,biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | motorcycle | ride | road | street sign,"1 person, 4 car, 1 motorcycle, 1 bus, 1 truck"
+211,3038.jpg,bicycle | bicycle helmet | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road,"1 person, 4 car, 1 motorcycle, 1 bus, 1 truck"
+212,3052.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road,"1 person, 6 car, 1 motorcycle, 1 bus, 1 truck"
+213,3066.jpg,building | car | city | city street | crosswalk | intersection | motorcycle | road | street corner | street sign | traffic sign,"4 car, 1 motorcycle, 1 bus"
+214,3080.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"5 car, 1 bus, 1 truck"
+215,3094.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car, 1 bus, 1 truck"
+216,3108.jpg,building | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"3 car, 1 bus, 1 truck"
+217,3122.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"5 car, 1 truck"
+218,3136.jpg,building | car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"1 person, 5 car, 1 bus"
+219,3150.jpg,building | car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"6 car, 1 bus, 1 truck"
+220,3164.jpg,building | car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"12 car, 1 truck"
+221,3178.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 6 car, 1 truck"
+222,3192.jpg,car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"1 person, 6 car, 1 truck"
+223,3206.jpg,biker | car | city | city street | crosswalk | person | intersection | man | ride | road | street corner | street sign | traffic sign,"1 person, 4 car, 1 bus, 1 truck"
+224,3220.jpg,biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | motorcycle | motorcyclist | ride | road,"1 person, 5 car, 1 bus, 1 truck"
+225,3234.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road | scooter | skateboarder,"1 person, 3 car, 1 bus, 1 truck"
+226,3248.jpg,city | construction worker | cross | crosswalk | person | intersection | man | ride | road | walk,"2 person, 6 car, 1 bus, 1 truck, 1 skateboard"
+227,3262.jpg,city | cross | crosswalk | person | intersection | man | ride | road | walk,"2 person, 5 car, 1 bus, 1 truck"
+228,3276.jpg,cross | crosswalk | green | person | jog | man | road | walk | woman,"1 person, 4 car, 1 bus, 1 handbag"
+229,3290.jpg,cross | crosswalk | girl | person | ride | road | walk | woman,"1 person, 11 car, 1 bus, 1 truck"
+230,3304.jpg,cross | crosswalk | girl | green | person | road | walk | woman | zebra crossing,"1 person, 7 car, 1 bus, 1 truck"
+231,3318.jpg,bag | carry | cross | crosswalk | person | man | road | shopping bag | walk | woman,"1 person, 5 car, 1 handbag"
+232,3332.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 6 car, 1 truck"
+233,3346.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,7 car
+234,3360.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car"
+235,3374.jpg,building | car | city | city street | crosswalk | intersection | road | stop light | traffic light | street corner | street sign | traffic sign,"1 person, 5 car"
+236,3388.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"1 person, 6 car"
+237,3402.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 6 car"
+238,3416.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"1 person, 4 car, 1 bench"
+239,3430.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"1 person, 4 car"
+240,3444.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car, 1 truck"
+241,3458.jpg,city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"1 person, 6 car"
+242,3472.jpg,city | city street | cross | crosswalk | intersection | road | street corner | street sign,"1 person, 5 car, 1 truck"
+243,3486.jpg,bicycle | biker | bike lane | city | city street | crosswalk | person | intersection | man | ride | road | street sign,"1 person, 6 car"
+244,3500.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car"
+245,3514.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road | street sign,"1 person, 3 car"
+246,3528.jpg,bicycle | biker | city | city street | cross | crosswalk | person | intersection | man | ride | road,"1 person, 5 car"
+247,3542.jpg,city | cross | crosswalk | person | intersection | man | road | walk,"1 person, 5 car"
+248,3556.jpg,city | city street | cross | crosswalk | person | jog | man | ride | road | skateboarder,"1 person, 5 car"
+249,3570.jpg,cross | crosswalk | person | jog | man | ride | road | skateboarder,"1 person, 3 car"
+250,3584.jpg,boy | cross | crosswalk | person | man | ride | road | skateboarder,"1 person, 3 car"
+251,3598.jpg,boy | child | cross | crosswalk | person | man | monocycle | ride | road | scooter | shirt | skateboarder | walk | zebra crossing,"2 person, 1 car, 1 truck"
+252,3612.jpg,boy | cross | crosswalk | person | man | road | shirt | skateboarder | stand | walk,"1 person, 1 car, 1 truck, 1 skateboard"
+253,3626.jpg,boy | child | crosswalk | hand | person | man | road | shirt | stand,"1 person, 2 car, 1 truck, 1 frisbee"
+254,3640.jpg,boy | child | crosswalk | hand | person | man | road | shirt | stand,"2 person, 2 car, 1 truck, 1 surfboard"
+255,3654.jpg,arm | boy | child | hand | person | man | road | shirt | stand | street corner,"1 person, 2 car, 1 truck"
+256,3668.jpg,boy | child | cross | crosswalk | person | road | stand | stool | walk,"1 person, 2 car, 1 truck"
+257,3682.jpg,cross | crosswalk | person | man | road | skateboarder | stand | walk,"1 person, 3 car, 1 truck, 2 bench"
+258,3696.jpg,city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"2 person, 3 car, 1 truck"
+259,3710.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+260,3724.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign | tree,"5 car, 1 bench"
+261,3738.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,9 car
+262,3752.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,12 car
+263,3766.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,7 car
+264,3780.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,7 car
+265,3794.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+266,3808.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+267,3822.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,5 car
+268,3836.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+269,3850.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+270,3864.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+271,3878.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,9 car
+272,3892.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,6 car
+273,3906.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,6 car
+274,3920.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+275,3934.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,6 car
+276,3948.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 6 car"
+277,3962.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign,5 car
+278,3976.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"1 person, 5 car"
+279,3990.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign,8 car
+280,4004.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,6 car
+281,4018.jpg,car | city | cross | crosswalk | person | pavement | pedestrian | road | walk | woman,"1 person, 10 car"
+282,4032.jpg,cross | crosswalk | person | man | pavement | road | walk | woman,"2 person, 8 car, 1 skateboard"
+283,4046.jpg,car | cross | crosswalk | person | man | pedestrian | road | walk | woman,"1 person, 7 car, 1 skateboard"
+284,4060.jpg,cross | crosswalk | person | man | pedestrian | road | skateboarder | walk,"1 person, 7 car, 1 suitcase, 1 skateboard"
+285,4074.jpg,cross | crosswalk | person | pedestrian | push | road | walk | zebra crossing,"4 person, 7 car, 1 handbag"
+286,4088.jpg,chessboard | cross | crosswalk | person | intersection | man | pedestrian | road | walk | zebra crossing,"4 person, 7 car, 2 backpack, 1 handbag, 1 suitcase, 1 keyboard"
+287,4102.jpg,couple | cross | crosswalk | person | man | pedestrian | road | walk | woman | zebra crossing,"3 person, 6 car, 1 backpack, 1 handbag"
+288,4116.jpg,cross | crosswalk | person | intersection | man | pedestrian | road | walk,"4 person, 5 car"
+289,4130.jpg,cross | crosswalk | person | intersection | man | pedestrian | road | walk,"4 person, 5 car"
+290,4144.jpg,city | city street | cross | crosswalk | person | intersection | pedestrian | road | walk | zebra crossing,"5 person, 5 car"
+291,4158.jpg,chessboard | cross | crosswalk | person | intersection | pedestrian | road | walk | woman | zebra crossing,"3 person, 6 car, 1 bench"
+292,4172.jpg,carry | catch | chessboard | cross | crosswalk | person | man | road | sign | walk | zebra crossing,"4 person, 6 car, 1 bench"
+293,4186.jpg,carry | catch | chessboard | chess | cross | crosswalk | person | man | road | sign | skateboarder | walk | zebra crossing,"3 person, 3 car"
+294,4200.jpg,catch | chessboard | chess | cross | crosswalk | person | man | road | sign | walk | zebra crossing,"3 person, 5 car, 1 parking meter"
+295,4214.jpg,carry | catch | chessboard | chess | cross | crosswalk | person | man | road | skateboarder | walk | zebra crossing,"8 person, 4 car"
+296,4228.jpg,carry | catch | chessboard | chess | cross | crosswalk | person | man | road | sign | skateboarder | walk | zebra crossing,"3 person, 5 car, 1 skateboard"
+297,4242.jpg,boy | catch | chessboard | chess | cross | crosswalk | person | man | ride | road | skateboard | skateboarder | walk,"4 person, 6 car"
+298,4256.jpg,cross | crosswalk | person | man | pedestrian | road | walk,"3 person, 4 car, 1 skateboard"
+299,4270.jpg,cross | crosswalk | person | intersection | man | pedestrian | road | walk | woman | zebra crossing,"3 person, 6 car"
+300,4284.jpg,cross | crosswalk | person | jog | man | road | shirt | walk | zebra crossing,"1 person, 9 car"
+301,4298.jpg,city | cross | crosswalk | person | intersection | man | road | walk,"1 person, 6 car, 2 skateboard"
+302,4312.jpg,cross | crosswalk | girl | person | jog | man | road | short | walk | woman | zebra crossing,"2 person, 9 car, 1 skateboard"
+303,4326.jpg,cross | crosswalk | girl | person | intersection | man | road | walk | woman | zebra crossing,"4 person, 6 car"
+304,4340.jpg,cross | crosswalk | girl | person | road | walk | woman | zebra crossing,"6 person, 4 car"
+305,4354.jpg,cross | crosswalk | girl | person | intersection | road | walk | woman | zebra crossing,"5 person, 4 car, 3 skateboard"
+306,4368.jpg,cross | crosswalk | girl | person | intersection | pedestrian | road | walk | woman | zebra crossing,"6 person, 5 car"
+307,4382.jpg,cross | crosswalk | girl | person | intersection | pedestrian | road | walk | woman | zebra crossing,"4 person, 4 car, 3 skateboard"
+308,4396.jpg,car | cross | crosswalk | person | intersection | pedestrian | road | walk | woman | zebra crossing,"4 person, 6 car"
+309,4410.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | man | pedestrian | road | walk,"7 person, 3 car"
+310,4424.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | pedestrian | ride | road | skateboarder | walk,"6 person, 5 car, 2 skateboard"
+311,4438.jpg,baby carriage | biker | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"6 person, 5 car"
+312,4452.jpg,bicycle | biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | pedestrian | ride | road,"11 person, 4 car, 1 skateboard"
+313,4466.jpg,biker | city | city street | cross | crosswalk | person | intersection | pedestrian | ride | road | scooter | skateboarder | walk,"6 person, 8 car"
+314,4480.jpg,bicycle | biker | bike lane | cross | crosswalk | person | intersection | man | pedestrian | ride | road,"4 person, 5 car"
+315,4494.jpg,child | cross | crosswalk | person | man | ride | road | skateboarder | walk,"4 person, 6 car"
+316,4508.jpg,cross | crosswalk | person | jog | man | ride | road | scooter | skateboard | skateboarder | walk | woman | zebra crossing,"3 person, 6 car, 3 skateboard"
+317,4536.jpg,cross | crosswalk | person | man | road | skateboarder | walk | woman,"4 person, 4 car"
+318,4550.jpg,boy | cross | crosswalk | person | khaki | man | road | skateboarder | walk | zebra crossing,"3 person, 4 car, 1 skateboard"
+319,4564.jpg,boy | cross | crosswalk | person | skate | man | ride | road | skateboard | skateboarder,"4 person, 5 car, 1 skateboard"
+320,4578.jpg,car | cross | crosswalk | person | intersection | man | pedestrian | ride | road | skateboarder | walk,"4 person, 8 car, 3 skateboard"
+321,4592.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | man | ride | road | scooter | walk,"3 person, 8 car"
+322,4606.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | motorcycle | motorcyclist | ride | road | scooter,"1 person, 3 car"
+323,4620.jpg,blue | city | city street | cross | crosswalk | person | jog | man | road | shirt | walk,"3 person, 4 car"
+324,4634.jpg,blue | city | city street | cross | crosswalk | person | jog | man | ride | road | shirt | walk,"2 person, 3 car"
+325,4648.jpg,blue | city | city street | cross | crosswalk | person | jog | man | road | shirt | walk,"3 person, 3 car"
+326,4662.jpg,blue | city | cross | crosswalk | person | jog | man | road | shirt | walk,"2 person, 7 car, 1 skateboard"
+327,4676.jpg,blue | cross | crosswalk | person | man | ride | road | scooter | shirt | walk,"3 person, 6 car"
+328,4690.jpg,blue | cross | crosswalk | person | jog | man | ride | road | scooter | shirt | skateboarder,"2 person, 5 car"
+329,4704.jpg,blue | cross | crosswalk | person | intersection | man | ride | road | scooter | shirt | skateboard | skateboarder,"2 person, 6 car"
+330,4718.jpg,car | city | city street | cross | crosswalk | person | intersection | man | ride | road | walk,"2 person, 4 car"
+331,4732.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street sign,"1 person, 5 car"
+332,4746.jpg,city | city street | cross | crosswalk | person | intersection | jog | man | ride | road | walk,"1 person, 5 car"
+333,4760.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"1 person, 7 car"
+334,4774.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | traffic sign,"1 person, 5 car"
+335,4788.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"1 person, 5 car"
+336,4802.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,3 car
+337,4816.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 5 car, 1 truck"
+338,4830.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,"4 car, 1 truck"
+339,4844.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 3 car"
+340,4858.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,"2 person, 5 car"
+341,4872.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,5 car
+342,4886.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car, 1 truck"
+343,4900.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 5 car, 1 truck"
+344,4914.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car"
+345,4928.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign,"2 person, 5 car"
+346,4942.jpg,car | city | city street | crosswalk | intersection | motorcycle | road | street corner | street sign | traffic sign,"2 person, 5 car"
+347,4956.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car"
+348,4970.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"2 person, 3 car"
+349,4984.jpg,city | city street | construction worker | cross | crosswalk | person | intersection | man | road | street corner | street sign | traffic sign,"3 person, 3 car"
+350,4998.jpg,biker | bike lane | city | city street | crosswalk | person | intersection | man | ride | road | street corner | street sign,"3 person, 3 car"
+351,5012.jpg,city | city street | construction worker | crosswalk | person | intersection | man | road | street corner | street sign,"3 person, 6 car"
+352,5026.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,2 car
+353,5040.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+354,5054.jpg,city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car"
+355,5068.jpg,city | city street | construction worker | crosswalk | curve | intersection | road | street corner | street sign | traffic sign,5 car
+356,5082.jpg,car | city | city street | construction worker | crosswalk | curve | intersection | road | street corner | street sign | traffic sign,2 car
+357,5096.jpg,car | city | city street | construction worker | crosswalk | curve | intersection | road | street corner | street sign | traffic sign,3 car
+358,5110.jpg,building | car | city | city street | construction worker | crosswalk | curve | intersection | road | street corner | street sign | traffic sign,4 car
+359,5124.jpg,car | city | city street | crosswalk | curve | intersection | road | street corner | street sign | traffic sign,3 car
+360,5138.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+361,5152.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+362,5166.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+363,5180.jpg,car | city | city street | construction worker | crosswalk | curve | intersection | road | street corner | street sign | traffic sign,4 car
+364,5194.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+365,5208.jpg,car | city | city street | construction worker | crosswalk | curve | intersection | road | traffic light | street corner | street sign | traffic sign,5 car
+366,5222.jpg,car | city | city street | construction worker | crosswalk | curve | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car"
+367,5236.jpg,car | city | city street | construction worker | crosswalk | curve | intersection | road | street corner | street sign,3 car
+368,5250.jpg,car | city | city street | construction worker | crosswalk | curve | intersection | road | street corner | street sign | traffic sign,"2 person, 5 car"
+369,5264.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+370,5278.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign,"2 person, 3 car"
+371,5292.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign,"2 person, 8 car"
+372,5306.jpg,biker | car | city | city street | construction worker | crosswalk | person | intersection | man | ride | road | street corner | street sign,"1 person, 7 car"
+373,5320.jpg,biker | car | city | city street | construction worker | crosswalk | curve | intersection | man | ride | road | street sign,"1 person, 6 car"
+374,5334.jpg,car | city | city street | construction worker | cross | crosswalk | person | intersection | man | road | street sign | walk,"1 person, 6 car"
+375,5348.jpg,car | city | city street | construction worker | cross | crosswalk | direct | person | intersection | man | road | street corner | street sign,"3 person, 5 car"
+376,5362.jpg,car | city | city street | construction worker | cross | crosswalk | direct | person | intersection | man | road | street corner | street sign,"5 person, 7 car"
+377,5376.jpg,car | city | city street | construction worker | crosswalk | person | intersection | man | road | street corner | street sign,"3 person, 6 car"
+378,5390.jpg,car | city | city street | construction worker | crosswalk | intersection | man | road | street corner | street sign,"3 person, 5 car"
+379,5404.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign,"2 person, 3 car"
+380,5418.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 person, 5 car"
+381,5432.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 person, 5 car"
+382,5446.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 3 car"
+383,5460.jpg,car | city | city street | construction worker | crosswalk | drive | intersection | road | street corner | street sign,"1 person, 6 car"
+384,5474.jpg,bus | car | city | city bus | city street | curb | drive | road | travel | white,"3 car, 1 bus"
+385,5488.jpg,bus | bus stop | city | city bus | city street | crosswalk | curb | drive | road | travel | white,"1 person, 1 car, 1 bus"
+386,5502.jpg,bus | bus stop | city bus | crosswalk | curb | drive | road | tour bus | white,"3 person, 1 train"
+387,5516.jpg,bus | bus stop | city | city bus | crosswalk | curb | drive | road | tour bus | white,"1 person, 1 bus"
+388,5530.jpg,bus | city bus | cross | crosswalk | curb | drive | intersection | road | tour bus | white,1 bus
+389,5544.jpg,bus | city bus | cross | crosswalk | person | man | ride | road | walk | zebra crossing,"2 person, 1 truck, 1 skateboard"
+390,5558.jpg,cross | crosswalk | person | man | ride | road | skateboard | skateboarder | walk | zebra crossing,"2 person, 1 bus, 1 truck"
+391,5572.jpg,bus | cross | crosswalk | person | man | road | skateboarder | walk | zebra crossing,"2 person, 3 car, 1 bus, 1 truck, 1 backpack"
+392,5586.jpg,bus | cross | crosswalk | person | skate | intersection | man | ride | road | skateboarder | walk,"3 person, 3 car"
+393,5600.jpg,bus | city bus | cross | crosswalk | person | intersection | man | road | skateboarder | walk,"3 person, 3 car, 1 bus, 1 truck, 1 backpack"
+394,5614.jpg,biker | car | city street | cross | crosswalk | person | intersection | man | ride | road | skateboarder | walk,"2 person, 3 car, 1 bus"
+395,5628.jpg,biker | bike lane | car | city | city street | cross | crosswalk | drive | person | intersection | man | ride | road,"2 person, 2 car, 1 bus"
+396,5642.jpg,ambulance | car | city | city street | cross | crosswalk | drive | person | intersection | man | pedestrian | road | walk,"3 person, 3 car, 1 bus"
+397,5656.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car, 1 truck"
+398,5670.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,"3 car, 1 truck"
+399,5684.jpg,car | city | city street | crosswalk | drive | intersection | road | traffic light | street corner | street sign | traffic sign,"6 car, 1 bus"
+400,5698.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,"5 car, 2 truck"
+401,5712.jpg,car | city | city street | construction worker | crosswalk | direct | intersection | road | street corner | street sign | traffic sign,6 car
+402,5726.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+403,5740.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+404,5754.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+405,5768.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+406,5782.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+407,5796.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 person, 4 car"
+408,5810.jpg,car | city | city street | construction worker | crosswalk | direct | intersection | road | traffic light | street corner | street sign | traffic sign,"1 person, 7 car"
+409,5824.jpg,biker | car | city | city street | construction worker | cross | crosswalk | direct | person | intersection | man | ride | road | street sign,"1 person, 7 car"
+410,5838.jpg,car | city | city street | construction worker | cross | crosswalk | person | intersection | man | ride | road | skateboarder | walk,"2 person, 3 car"
+411,5852.jpg,car | city street | construction worker | cross | crosswalk | person | intersection | man | road | walk,"1 person, 4 car"
+412,5866.jpg,car | cross | crosswalk | person | intersection | man | ride | road | skateboarder | walk | zebra crossing,"2 person, 8 car"
+413,5880.jpg,car | city street | cross | crosswalk | person | intersection | man | road | walk | woman | zebra crossing,"2 person, 4 car"
+414,5894.jpg,cross | crosswalk | girl | person | road | walk | woman | zebra crossing,"3 person, 7 car, 1 skateboard"
+415,5908.jpg,cross | crosswalk | girl | person | road | walk | woman | zebra crossing,"3 person, 7 car, 1 skateboard"
+416,5922.jpg,car | cross | crosswalk | person | pedestrian | road | walk | woman,"3 person, 7 car, 2 skateboard"
+417,5936.jpg,car | city | city street | cross | crosswalk | person | jog | man | ride | road,"2 person, 9 car"
+418,5950.jpg,couple | cross | crosswalk | person | jog | man | road | walk | woman,"2 person, 5 car"
+419,5964.jpg,couple | cross | crosswalk | person | intersection | man | road | walk | woman,"2 person, 2 car"
+420,5978.jpg,couple | cross | crosswalk | person | jog | man | road | walk | woman,"2 person, 3 car, 1 truck"
+421,5992.jpg,couple | cross | crosswalk | person | jog | man | road | walk | woman | zebra crossing,"2 person, 5 car, 2 truck"
+422,6006.jpg,couple | cross | crosswalk | person | jog | man | road | walk | woman,"2 person, 3 car, 1 truck"
+423,6020.jpg,couple | cross | crosswalk | girl | person | jog | man | road | walk | woman | zebra crossing,"3 person, 6 car, 1 truck"
+424,6034.jpg,cross | crosswalk | girl | person | jog | man | road | short | skateboarder | walk | woman | zebra crossing,"2 person, 3 car, 1 truck, 1 skateboard"
+425,6048.jpg,cross | crosswalk | person | man | ride | road | short | skateboard | skateboarder | vest | walk | woman | zebra crossing,"1 person, 2 car"
+426,6062.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign,2 car
+427,6076.jpg,city | city street | cross | crosswalk | person | intersection | man | road | shadow | street corner | street sign | walk,"3 car, 1 truck"
+428,6090.jpg,cross | crosswalk | person | jog | man | road | walk | white,"1 person, 1 car, 1 truck, 2 skateboard"
+429,6104.jpg,city | cross | crosswalk | person | man | road | skateboarder | walk,"2 person, 3 car, 1 truck"
+430,6118.jpg,city | city street | cross | crosswalk | person | intersection | man | road | stand | walk | woman,"1 person, 3 car, 1 truck"
+431,6132.jpg,city | cross | crosswalk | person | intersection | man | road | walk,"2 person, 2 car, 1 truck"
+432,6146.jpg,city | cross | crosswalk | person | intersection | man | road | walk,"1 person, 1 truck"
+433,6160.jpg,city | cross | crosswalk | person | intersection | man | motorcycle | ride | road | street sign | walk,"1 person, 1 car, 1 truck"
+434,6174.jpg,city | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"1 person, 1 truck"
+435,6188.jpg,biker | city | city street | cross | crosswalk | person | intersection | man | ride | road | walk,2 person
+436,6202.jpg,biker | city | city street | cross | crosswalk | person | intersection | man | ride | road | walk,"2 person, 1 car"
+437,6216.jpg,city | city street | cross | crosswalk | person | intersection | man | road | street corner | street sign | walk,"1 person, 2 car"
+438,6230.jpg,city | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"2 person, 2 car"
+439,6244.jpg,city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk | zebra crossing,"3 person, 2 car"
+440,6258.jpg,city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | skateboard | skateboarder | walk,"2 person, 3 car, 1 skateboard"
+441,6272.jpg,cross | crosswalk | person | intersection | man | road | stand | street corner | walk | zebra crossing,"2 person, 2 car"
+442,6286.jpg,cross | crosswalk | person | man | road | walk | woman | zebra crossing,"2 person, 3 car"
+443,6300.jpg,briefcase | cross | crosswalk | person | man | road | shirt | walk | white | woman | zebra crossing,"2 person, 2 car"
+444,6314.jpg,briefcase | business suit | cross | crosswalk | person | man | road | tie | walk | white | zebra crossing,"1 person, 2 car"
+445,6328.jpg,cross | crosswalk | person | man | road | walk,"1 person, 2 car, 2 skateboard"
+446,6342.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+447,6356.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 2 car"
+448,6370.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car"
+449,6384.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+450,6398.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+451,6412.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+452,6426.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+453,6440.jpg,car | city | city street | cross | crosswalk | person | intersection | man | ride | road | street corner | street sign,2 car
+454,6454.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 2 car"
+455,6468.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car"
+456,6482.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+457,6496.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 2 car"
+458,6510.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 5 car"
+459,6524.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street corner | street sign | walk,"1 person, 2 car, 1 truck"
+460,6538.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign,"2 person, 2 car"
+461,6552.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign,"3 person, 2 car"
+462,6566.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | walk,"2 person, 3 car, 1 truck"
+463,6580.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"2 person, 3 car"
+464,6594.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"1 person, 3 car"
+465,6608.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 2 car"
+466,6622.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign,3 car
+467,6636.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 2 car, 1 truck"
+468,6650.jpg,cross | crosswalk | person | man | red | road | shirt | walk,"2 person, 3 car, 1 backpack, 2 skateboard"
+469,6664.jpg,catch | couple | cross | crosswalk | hand | person | man | road | shirt | walk | woman | zebra crossing,"2 person, 2 car"
+470,6678.jpg,cross | crosswalk | person | man | push | road | shirt | skateboarder | walk,"2 person, 2 car"
+471,6692.jpg,cross | crosswalk | person | man | road | walk,"2 person, 2 car"
+472,6706.jpg,cross | crosswalk | person | intersection | man | pedestrian | road | walk,"2 person, 2 car"
+473,6720.jpg,car | couple | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"2 person, 3 car"
+474,6734.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | man | pedestrian | road | shirt | walk,"2 person, 2 car"
+475,6748.jpg,bicycle | biker | bike lane | car | city | cross | crosswalk | person | intersection | man | ride | road,"2 person, 3 car"
+476,6762.jpg,biker | car | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"2 person, 4 car, 1 truck"
+477,6776.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"2 person, 4 car"
+478,6790.jpg,car | city | city street | construction worker | cross | crosswalk | person | intersection | man | road | street corner | street sign,"1 person, 2 car"
+479,6804.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 3 car, 1 truck"
+480,6818.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,3 car
+481,6832.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"1 person, 6 car"
+482,6846.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"3 person, 4 car, 1 truck"
+483,6860.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"3 person, 5 car"
+484,6874.jpg,car | city | city street | cross | crosswalk | person | intersection | man | ride | road | skateboard | skateboarder | walk,"2 person, 2 car, 1 truck, 1 skateboard"
+485,6888.jpg,car | cross | crosswalk | person | intersection | man | ride | road | skateboarder | stand | walk | zebra crossing,"1 person, 2 car, 1 skateboard"
+486,6902.jpg,cross | crosswalk | person | intersection | man | ride | road | skateboarder | walk | zebra crossing,"1 person, 3 car"
+487,6916.jpg,cross | crosswalk | person | man | road | skateboarder | walk,"1 person, 4 car"
+488,6930.jpg,baseball hat | briefcase | cross | crosswalk | person | man | road | walk | zebra crossing,"1 person, 2 car, 1 truck"
+489,6944.jpg,baseball hat | cross | crosswalk | person | man | road | skateboard | skateboarder | walk | zebra crossing,"2 person, 5 car, 1 truck"
+490,6958.jpg,cross | crosswalk | girl | jog | road | shopping bag | shoulder bag | walk | wear | woman,"1 person, 4 car, 1 truck, 1 handbag"
+491,6972.jpg,cross | crosswalk | girl | jog | road | run | walk | woman | zebra crossing,"1 person, 3 car, 2 handbag"
+492,6986.jpg,cross | crosswalk | girl | jog | road | run | short | walk | woman,"1 person, 3 car, 1 handbag"
+493,7000.jpg,cross | crosswalk | jog | road | walk | woman | zebra crossing,"1 person, 3 car"
+494,7014.jpg,city street | cross | crosswalk | person | jog | man | road | walk | woman,"2 person, 4 car, 1 handbag"
+495,7028.jpg,car | cross | crosswalk | person | intersection | jog | man | road | walk | woman,"1 person, 4 car"
+496,7042.jpg,car | city street | cross | crosswalk | person | intersection | jog | man | road | street corner | walk,"1 person, 4 car"
+497,7056.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street corner | street sign | walk,"1 person, 3 car"
+498,7070.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"1 person, 2 car"
+499,7084.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+500,7098.jpg,car | city | city street | cross | crosswalk | intersection | man | road | street corner | street sign,2 car
+501,7112.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"3 car, 1 truck"
+502,7126.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+503,7140.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+504,7154.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+505,7168.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"7 car, 1 truck"
+506,7182.jpg,car | city | city street | cross | crosswalk | person | intersection | pedestrian | road | street corner | street sign | walk,"1 person, 5 car"
+507,7252.jpg,cross | crosswalk | person | intersection | pedestrian | road | walk | woman | zebra crossing,"8 person, 2 car, 1 backpack, 1 skateboard"
+508,7266.jpg,cross | crosswalk | person | intersection | man | road | skateboarder | walk | woman,"4 person, 3 car, 1 handbag"
+509,7280.jpg,city street | cross | crosswalk | person | man | pedestrian | road | walk | woman,"6 person, 2 car"
+510,7294.jpg,city | cross | crosswalk | person | intersection | pedestrian | road | walk | woman | zebra crossing,"6 person, 2 car, 1 handbag"
+511,7308.jpg,city | city street | cross | crosswalk | person | pedestrian | road | walk | woman,"6 person, 4 car"
+512,7322.jpg,city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | skateboard | skateboarder | walk,"6 person, 6 car"
+513,7336.jpg,city | city street | cross | crosswalk | person | jog | man | ride | road | skateboarder | walk,"6 person, 3 car"
+514,7350.jpg,city | city street | cross | crosswalk | person | jog | man | ride | road | walk,"4 person, 3 car"
+515,7364.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road,"3 person, 1 bicycle, 5 car"
+516,7378.jpg,biker | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"3 person, 2 car"
+517,7392.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street sign | walk,"4 person, 3 car"
+518,7406.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | walk,"1 person, 4 car"
+519,7420.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign,"2 person, 2 car"
+520,7434.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"1 person, 4 car"
+521,7448.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"1 person, 4 car"
+522,7462.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 2 car"
+523,7476.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+524,7490.jpg,city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car"
+525,7504.jpg,city | city street | cross | crosswalk | intersection | road | street corner | street sign,"2 person, 4 car"
+526,7518.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 2 car"
+527,7532.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 2 car"
+528,7546.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,7 car
+529,7560.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 3 car"
+530,7574.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 4 car"
+531,7588.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 5 car"
+532,7602.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 6 car"
+533,7616.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 7 car"
+534,7630.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 9 car"
+535,7644.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 person, 6 car"
+536,7658.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+537,7672.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+538,7686.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 8 car"
+539,7700.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 person, 7 car"
+540,7714.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 6 car"
+541,7728.jpg,black | car | city | city street | cross | crosswalk | drive | intersection | road,"1 person, 4 car"
+542,7742.jpg,black | car | city street | cross | crosswalk | drive | intersection | road,"1 person, 4 car"
+543,7756.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | street sign,"1 person, 7 car"
+544,7770.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | street corner | street sign,"1 person, 5 car"
+545,7784.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | street corner | street sign,"1 person, 9 car"
+546,7798.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | street sign | traffic sign,"3 person, 6 car"
+547,7812.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | street sign | traffic sign,"1 person, 6 car"
+548,7826.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | street sign | traffic sign,"1 person, 7 car"
+549,7840.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | street sign,6 car
+550,7854.jpg,car | city | city street | cross | crosswalk | drive | person | intersection | road,"3 person, 6 car"
+551,7896.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | street sign | traffic sign,"4 person, 9 car"
+552,7910.jpg,car | city | city street | construction worker | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,"1 person, 8 car"
+553,7924.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,9 car
+554,7938.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,10 car
+555,7952.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,"7 car, 1 truck"
+556,7980.jpg,car | city | city street | cross | crosswalk | intersection | road | street sign | traffic sign,7 car
+557,7994.jpg,black | car | city | city street | cross | crosswalk | drive | intersection | road | suv,"6 car, 1 truck"
+558,8008.jpg,black | car | city street | cross | crosswalk | drive | intersection | minivan | road | suv | van | vehicle,6 car
+559,8022.jpg,black | car | city street | crosswalk | drive | intersection | road | street sign | suv | vehicle,2 car
+560,8036.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,6 car
+561,8148.jpg,bicycle | biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"4 person, 6 car"
+562,8162.jpg,car | city | city street | cross | crosswalk | person | intersection | pedestrian | road | walk,"6 person, 7 car, 1 skateboard"
+563,8176.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | walk,"5 person, 6 car"
+564,8190.jpg,car | city | city street | cross | crosswalk | person | intersection | pedestrian | road | walk,"4 person, 6 car, 1 truck"
+565,8204.jpg,bus | car | city | city bus | city street | cross | crosswalk | drive | intersection | road | travel | white,"3 person, 6 car, 1 bus"
+566,8218.jpg,blue | bus | bus stop | car | city | city bus | city street | curb | drive | road | travel | white,"7 car, 1 bus"
+567,8232.jpg,blue | bus | bus stop | city | city bus | city street | crosswalk | curb | drive | intersection | road | travel | white,"3 car, 1 bus"
+568,8246.jpg,blue | bus | bus stop | city | city bus | city street | crosswalk | curb | drive | intersection | road | travel | white,"1 bus, 1 train"
+569,8260.jpg,blue | bus | city | city bus | city street | crosswalk | curb | drive | road | tour bus | white,1 bus
+570,8274.jpg,bus | city | city bus | crosswalk | curb | drive | flag | road | tour bus | white,1 bus
+571,8288.jpg,bus | city bus | crosswalk | curb | drive | intersection | road | tour bus | travel | white,1 bus
+572,8302.jpg,bus | city bus | city street | cross | crosswalk | curb | drive | intersection | road | tour bus | travel | white,"1 person, 1 truck"
+573,8316.jpg,bus | city bus | city street | cross | crosswalk | drive | person | intersection | road | walk | white,"1 person, 1 car, 1 truck"
+574,8330.jpg,bus | city bus | cross | crosswalk | drive | person | intersection | road | walk | white,"3 person, 1 truck"
+575,8344.jpg,bus | city bus | cross | crosswalk | drive | person | intersection | man | road | stand | walk | white | woman | zebra crossing,"1 person, 2 car, 1 truck"
+576,8358.jpg,bus | city bus | cross | crosswalk | person | intersection | man | road | stand | walk | white | woman | zebra crossing,"1 person, 3 car, 1 truck"
+577,8372.jpg,bus | cross | crosswalk | person | intersection | man | road | stand | walk | zebra crossing,"1 person, 3 car, 1 bus, 1 truck"
+578,8386.jpg,bus | cross | crosswalk | person | intersection | road | walk | woman | zebra crossing,"1 person, 7 car, 1 truck"
+579,8400.jpg,briefcase | cross | crosswalk | person | pedestrian | road | walk | woman | zebra crossing,"1 person, 5 car, 1 truck"
+580,8414.jpg,bus | cross | crosswalk | person | man | pedestrian | road | walk | woman,"2 person, 4 car, 1 bus, 2 skateboard"
+581,8428.jpg,bus | car | city | city bus | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign | travel | white,"3 car, 1 bus"
+582,8442.jpg,bus | car | city | city bus | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign | travel | white,"5 car, 1 bus"
+583,8456.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,"6 car, 1 bus"
+584,8470.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,"5 car, 1 bus, 1 truck"
+585,8484.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 car, 1 truck"
+586,8498.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+587,8554.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+588,8568.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+589,8582.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+590,8596.jpg,car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,3 car
+591,8610.jpg,car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,5 car
+592,8624.jpg,car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,2 car
+593,8638.jpg,car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"3 car, 1 truck"
+594,8652.jpg,car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"3 car, 1 bus"
+595,8666.jpg,car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"1 person, 2 car"
+596,8680.jpg,car | city | city street | cross | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"2 person, 2 car"
+597,8694.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+598,8708.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car"
+599,8722.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car"
+600,8736.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car"
+601,8750.jpg,car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,"1 person, 2 car"
+602,8764.jpg,car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,3 car
+603,8778.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car"
+604,8792.jpg,car | city | city street | cross | crosswalk | person | intersection | man | ride | road | street sign | traffic sign,"1 person, 2 car"
+605,8806.jpg,car | city | city street | cross | crosswalk | person | intersection | man | ride | road | street sign | walk,"1 person, 3 car"
+606,8862.jpg,cross | crosswalk | person | intersection | jog | road | street sign | walk | woman,"1 person, 6 car"
+607,8876.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | man | road | street sign | walk | woman,"1 person, 5 car"
+608,8890.jpg,car | cross | crosswalk | person | intersection | jog | man | pink | road | walk | woman,"1 person, 3 car"
+609,8904.jpg,bicycle | biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | pink | ride | road | woman,"1 person, 3 car"
+610,8918.jpg,car | city | city street | cross | crosswalk | person | jog | man | pink | ride | road | walk | woman,"1 person, 4 car, 1 truck"
+611,8932.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | man | pink | road | street sign | walk | woman,"1 person, 6 car"
+612,8946.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | man | ride | road | woman,"1 person, 6 car"
+613,8960.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | man | road | street sign | walk | woman,"1 person, 4 car"
+614,8974.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | man | road | street sign | walk | woman,"1 person, 6 car"
+615,8988.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | man | ride | road | street sign | walk | woman,"2 person, 6 car, 1 truck"
+616,9002.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | man | ride | road | street sign | walk | woman,"1 person, 6 car, 1 truck"
+617,9016.jpg,car | city street | cross | crosswalk | person | intersection | jog | man | ride | road | street sign | woman,"1 person, 7 car"
+618,9030.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | man | ride | road | woman,"1 person, 4 car"
+619,9044.jpg,biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | jog | man | ride | road | woman,"1 person, 4 car"
+620,9058.jpg,bicycle | biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | ride | road | street sign,"1 person, 4 car"
+621,9072.jpg,car | city | city street | cross | crosswalk | person | intersection | man | ride | road | walk,"1 person, 5 car"
+622,9100.jpg,cross | crosswalk | person | intersection | jacket | pink | ride | road | walk | woman | zebra crossing,"2 person, 5 car"
+623,9128.jpg,cross | crosswalk | person | jog | man | pink | road | walk | woman,"3 person, 6 car"
+624,9142.jpg,cross | crosswalk | person | jog | man | pink | road | shirt | short | walk | woman | zebra crossing,"4 person, 5 car"
+625,9156.jpg,cross | crosswalk | person | man | pink | road | shirt | walk | woman,"4 person, 5 car, 1 surfboard"
+626,9170.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street corner | street sign | traffic sign | walk,"3 person, 5 car"
+627,9184.jpg,biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | motorcycle | ride | road | street sign | walk,"3 person, 6 car"
+628,9198.jpg,car | city | city street | cross | crosswalk | person | intersection | man | ride | road | skateboarder,"3 person, 5 car"
+629,9212.jpg,biker | car | city street | cross | crosswalk | person | intersection | man | ride | road | scooter | skateboard | skateboarder,"2 person, 6 car"
+630,9226.jpg,bicycle | biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | motorcycle | motorcyclist | ride | road,"2 person, 5 car"
+631,9240.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | skateboarder | walk,"3 person, 5 car"
+632,9254.jpg,car | cross | crosswalk | person | intersection | jog | man | road | walk | woman,"2 person, 6 car"
+633,9520.jpg,car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,5 car
+634,9534.jpg,car | city | city street | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,7 car
+635,9548.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+636,9562.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+637,9576.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+638,9590.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+639,9604.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+640,9618.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+641,9632.jpg,bicycle | biker | bike lane | blue | car | city | cross | crosswalk | person | man | ride | road | shirt,"1 person, 6 car, 1 motorcycle"
+642,9646.jpg,cross | crosswalk | person | man | road | stand | walk | woman,"3 person, 6 car"
+643,9660.jpg,cross | crosswalk | dress | person | road | walk | woman | zebra crossing,"2 person, 1 bicycle, 6 car, 2 handbag"
+644,9674.jpg,baby carriage | cart | cross | crosswalk | person | man | push | road | walk | woman,"1 person, 6 car"
+645,9688.jpg,bag | briefcase | cross | crosswalk | person | man | road | shopping bag | walk | woman,"1 person, 4 car, 1 truck, 1 handbag"
+646,9758.jpg,car | city | city street | crosswalk | person | intersection | motorcycle | road | street sign,"2 person, 4 car, 1 truck"
+647,9800.jpg,car | city street | cross | crosswalk | drive | intersection | road | street sign,"2 person, 8 car"
+648,9814.jpg,car | city street | cross | crosswalk | drive | intersection | road,"2 person, 7 car, 1 truck"
+649,9828.jpg,black | car | city street | cross | crosswalk | drive | intersection | road | sedan | suv,"2 person, 5 car, 1 truck"
+650,9842.jpg,car | city street | cross | crosswalk | drive | person | intersection | man | road | walk,"3 person, 4 car"
+651,9856.jpg,car | city | city street | cross | crosswalk | drive | person | intersection | pedestrian | road | street sign | walk,"3 person, 4 car, 1 truck"
+652,9870.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | street sign | walk,"3 person, 3 car"
+653,9884.jpg,car | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"3 person, 4 car"
+654,9898.jpg,car | city street | cross | crosswalk | person | intersection | jog | man | marathon | pedestrian | road | shirt | walk,"4 person, 4 car, 1 skateboard"
+655,9912.jpg,blue | cross | crosswalk | person | jog | man | road | shirt | walk | woman,"2 person, 2 car"
+656,9926.jpg,blue | car | cross | crosswalk | person | jog | man | road | shirt | walk,"2 person, 4 car"
+657,9940.jpg,blue | cross | crosswalk | person | jog | road | shirt | walk | woman | zebra crossing,"2 person, 4 car, 1 skateboard"
+658,9954.jpg,blue | cross | crosswalk | person | jog | road | shirt | walk | woman,"2 person, 3 car, 2 skateboard"
+659,9968.jpg,blue | cross | crosswalk | person | man | road | shirt | walk,"2 person, 3 car"
+660,9982.jpg,car | city street | cross | crosswalk | person | intersection | jog | man | pedestrian | ride | road | street sign | walk,"1 person, 3 car"
+661,9996.jpg,car | city | city street | cross | crosswalk | person | intersection | jog | man | ride | road | street sign | walk,"1 person, 3 car"
+662,10038.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street sign,"2 person, 2 car"
+663,10052.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 person, 1 car"
+664,10066.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,"2 person, 1 car"
+665,10080.jpg,city | city street | crosswalk | person | intersection | road | street corner | street sign,1 person
+666,10094.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,2 person
+667,10108.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign,1 person
+668,10122.jpg,building | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,1 person
+669,10136.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 person
+670,10150.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,1 car
+671,10164.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 1 car"
+672,10178.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+673,10192.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+674,10206.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+675,10220.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,1 car
+676,10318.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 1 car"
+677,10332.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 person, 1 car"
+678,10346.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 1 car"
+679,10360.jpg,city | city street | cross | crosswalk | person | intersection | road | street corner | street sign,2 person
+680,10374.jpg,city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | walk,2 person
+681,10388.jpg,city | city street | cross | crosswalk | person | intersection | road | street sign | walk,3 person
+682,10402.jpg,city | cross | crosswalk | person | man | pavement | road | stand | walk,"3 person, 1 surfboard"
+683,10430.jpg,bag | blue | briefcase | carry | cross | crosswalk | person | man | pedestrian | road | shopping bag | walk | woman | zebra crossing,"4 person, 1 skateboard"
+684,10444.jpg,couple | cross | crosswalk | person | man | pedestrian | road | walk | woman | zebra crossing,"5 person, 1 handbag"
+685,10458.jpg,cross | crosswalk | person | man | pedestrian | road | walk | woman | zebra crossing,4 person
+686,10472.jpg,cross | crosswalk | person | intersection | man | pedestrian | road | walk | zebra crossing,"4 person, 1 skateboard"
+687,10486.jpg,city | cross | crosswalk | person | intersection | man | pedestrian | road | walk | zebra crossing,"4 person, 2 car, 1 skateboard"
+688,10514.jpg,cross | crosswalk | person | man | pedestrian | road | walk,"5 person, 1 skateboard"
+689,10528.jpg,cross | crosswalk | person | jog | man | pedestrian | road | walk,4 person
+690,10542.jpg,couple | cross | crosswalk | girl | person | road | walk | woman,3 person
+691,10556.jpg,couple | cross | crosswalk | girl | person | road | walk | woman | zebra crossing,4 person
+692,10570.jpg,blue | taxi | cross | crosswalk | dress | person | man | road | shopping bag | walk | woman | yellow,"2 person, 1 car"
+693,10584.jpg,taxi | car | cross | crosswalk | drive | person | road | van | walk | woman | yellow,"2 person, 2 car, 1 truck"
+694,10598.jpg,taxi | car | city street | crosswalk | drive | intersection | road | school bus | travel | yellow,"2 car, 1 truck"
+695,10612.jpg,taxi | car | city | city street | cross | crosswalk | drive | intersection | road | school bus | travel | yellow,"1 person, 1 car"
+696,10626.jpg,taxi | car | city | city street | crosswalk | drive | intersection | road | school bus | street sign | travel | yellow,3 car
+697,10640.jpg,car | city | city street | crosswalk | drive | intersection | road | school bus | street sign | yellow,2 car
+698,10654.jpg,car | city | city street | crosswalk | drive | intersection | road | school bus | street sign | yellow,3 car
+699,10668.jpg,building | car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign | yellow,2 car
+700,10682.jpg,building | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,1 car
+701,10696.jpg,building | city | city street | crosswalk | intersection | office building | pole | road | street corner | street sign | traffic sign,2 car
+702,10710.jpg,building | city | city street | crosswalk | intersection | office building | pole | road | street corner | street sign | traffic sign,2 car
+703,10766.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+704,10780.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 1 car"
+705,10794.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+706,10808.jpg,building | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,2 car
+707,10836.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+708,10850.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 2 car"
+709,10906.jpg,building | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,1 car
+710,10920.jpg,building | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,"1 person, 1 car"
+711,10934.jpg,city | city street | cross | crosswalk | person | intersection | office building | ride | road | street corner | street sign,"3 person, 3 car"
+712,10948.jpg,city | city street | cross | crosswalk | person | intersection | man | ride | road | street sign | walk,"2 person, 3 car"
+713,10962.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | street sign | walk,"2 person, 2 car"
+714,11018.jpg,cross | crosswalk | person | man | road | walk | woman | zebra crossing,"2 person, 2 car, 1 handbag"
+715,11032.jpg,cross | crosswalk | person | man | pedestrian | road | shopping bag | walk | woman | zebra crossing,"2 person, 3 car"
+716,11046.jpg,cross | crosswalk | person | pedestrian | road | walk | woman | zebra crossing,"2 person, 2 car, 1 backpack"
+717,11060.jpg,cross | crosswalk | person | man | pedestrian | road | walk | woman | zebra crossing,"3 person, 3 car"
+718,11074.jpg,cross | crosswalk | person | man | pedestrian | road | walk | zebra crossing,"3 person, 1 car, 3 dog"
+719,11088.jpg,cross | crosswalk | person | intersection | man | pedestrian | road | walk | zebra crossing,"2 person, 2 skateboard"
+720,11102.jpg,city | cross | crosswalk | person | jog | man | pavement | road | walk,"4 person, 1 car, 1 skateboard"
+721,11116.jpg,city | city street | cross | crosswalk | person | intersection | jog | man | road | walk,"1 person, 1 car"
+722,11158.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+723,11186.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,1 car
+724,11200.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,2 car
+725,11214.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign,1 car
+726,11312.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+727,11326.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | tree,2 car
+728,11340.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+729,11438.jpg,city | city street | cross | crosswalk | intersection | pole | road | street corner | street sign | traffic sign,1 car
+730,11466.jpg,cross | crosswalk | person | intersection | man | pedestrian | road | street sign | walk,1 person
+731,11480.jpg,city | cross | crosswalk | person | intersection | man | road | skateboarder | walk,2 person
+732,11494.jpg,briefcase | cross | crosswalk | person | leash | man | road | skateboarder | walk,2 person
+733,11508.jpg,briefcase | cross | crosswalk | person | man | road | walk,1 person
+734,11522.jpg,bag | briefcase | cross | crosswalk | person | man | road | shopping bag | walk,"1 person, 1 handbag"
+735,11536.jpg,cross | crosswalk | man | road | skateboarder | walk | zebra crossing,1 person
+736,11550.jpg,boy | cross | crosswalk | person | man | road | walk | zebra crossing,"1 person, 1 skateboard"
+737,11564.jpg,city | cross | crosswalk | person | man | pavement | ride | road | skateboard | skateboarder | walk,"2 person, 1 skateboard"
+738,11578.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+739,11746.jpg,city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,1 car
+740,11760.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+741,11774.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+742,11788.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,1 car
+743,11802.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+744,11830.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+745,11844.jpg,building | car | city | city street | crosswalk | intersection | motorcycle | road | street corner | street sign | traffic sign,1 car
+746,11858.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+747,11872.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,1 car
+748,11886.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,1 car
+749,11900.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,1 car
+750,11984.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 person
+751,11998.jpg,city | city street | crosswalk | intersection | road | street sign,2 person
+752,12012.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 1 car"
+753,12026.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+754,12040.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+755,12054.jpg,city | city street | cross | crosswalk | person | intersection | road | street corner | street sign,"4 person, 1 car"
+756,12068.jpg,cross | crosswalk | dress | girl | road | walk | white | woman,"4 person, 1 car, 1 skateboard"
+757,12082.jpg,cross | crosswalk | girl | road | walk | woman | zebra crossing,"4 person, 1 skateboard"
+758,12096.jpg,cross | crosswalk | dress | girl | person | road | walk | woman,"3 person, 1 car"
+759,12110.jpg,cross | crosswalk | girl | person | jog | marathon | road | walk | woman | zebra crossing,"5 person, 2 car"
+760,12124.jpg,cross | crosswalk | girl | person | intersection | road | walk | woman | zebra crossing,"5 person, 2 car"
+761,12138.jpg,cross | crosswalk | person | jog | man | road | walk | woman,"5 person, 2 car"
+762,12208.jpg,city | city street | crosswalk | person | intersection | motorcycle | ride | road | street sign,5 person
+763,12222.jpg,biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | motorcycle | ride | road,4 person
+764,12236.jpg,city | cross | crosswalk | person | intersection | man | pedestrian | road | walk,3 person
+765,12250.jpg,city | city street | cross | crosswalk | person | intersection | man | motorcycle | motorcyclist | ride | road | walk,3 person
+766,12264.jpg,city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,2 person
+767,12278.jpg,car | city | city street | cross | crosswalk | drive | person | intersection | road | suv | vehicle,"4 person, 2 car"
+768,12292.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | traffic light | suv | vehicle,"3 person, 1 car"
+769,12306.jpg,black | car | city street | crosswalk | drive | intersection | motorcycle | motorcyclist | road | suv | vehicle,"1 person, 1 car, 1 motorcycle"
+770,12320.jpg,biker | car | city | city street | crosswalk | drive | person | intersection | man | motorbike | motorcycle | motorcyclist | ride | road,"1 person, 1 car, 1 motorcycle"
+771,12334.jpg,car | city | city street | cross | crosswalk | drive | person | intersection | man | motorbike | motorcycle | motorcyclist | ride | road | scooter,"1 person, 1 car"
+772,12348.jpg,biker | car | city | city street | crosswalk | drive | person | intersection | man | motorbike | motorcycle | motorcyclist | ride | road | scooter,"1 person, 2 car"
+773,12362.jpg,car | city | city street | crosswalk | person | intersection | man | moped | motorbike | motorcycle | motorcyclist | ride | road | scooter,"1 person, 1 car"
+774,12376.jpg,biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | motorcycle | motorcyclist | ride | road | scooter | street sign,"1 person, 1 car"
+775,12390.jpg,bicycle | biker | bike lane | city | city street | crosswalk | person | intersection | man | motorcycle | motorcyclist | ride | road | street sign,"1 person, 1 car, 1 motorcycle"
+776,12404.jpg,bicycle | biker | bike lane | city | city street | crosswalk | person | intersection | man | motorbike | motorcycle | motorcyclist | ride | road | scooter | street sign,"1 person, 3 car"
+777,12446.jpg,bicycle | biker | bike lane | car | city street | cross | crosswalk | drive | person | intersection | man | motorbike | motorcycle | motorcyclist | ride | road | scooter,"2 person, 1 car, 1 motorcycle"
+778,12460.jpg,bicycle | biker | bike lane | car | city street | crosswalk | drive | person | intersection | man | motorcycle | motorcyclist | ride | road | scooter,"1 person, 1 car"
+779,12474.jpg,car | city street | crosswalk | drive | person | intersection | man | moped | motorbike | motorcycle | motorcyclist | ride | road | scooter,"3 person, 2 car"
+780,12488.jpg,bicycle | biker | bike lane | car | city | city street | crosswalk | drive | person | intersection | man | motorbike | motorcycle | motorcyclist | ride | road | scooter,"1 person, 2 car"
+781,12502.jpg,bicycle | biker | bike lane | car | city | city street | crosswalk | person | intersection | man | motorcycle | motorcyclist | ride | road,"2 person, 2 car"
+782,12516.jpg,bicycle | biker | bike lane | car | city | city street | crosswalk | person | intersection | man | motorbike | motorcycle | motorcyclist | ride | road,"2 person, 2 car"
+783,12530.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | motorcycle | motorcyclist | ride | road,"1 person, 1 car, 2 motorcycle"
+784,12544.jpg,bicycle | bicycle helmet | biker | bike lane | cross | crosswalk | helmet | person | man | ride | road | wear,"1 person, 1 car, 1 motorcycle"
+785,12558.jpg,bicycle | bicycle helmet | biker | bike lane | bin | cart | container | crate | cross | crosswalk | green | person | load | man | push | ride | road | woman,"2 person, 1 bicycle, 1 car, 1 motorcycle"
+786,12572.jpg,baby carriage | bike lane | cart | city | city street | crosswalk | green | person | man | push | road | street sign,"1 person, 1 car"
+787,12586.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+788,12600.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+789,12684.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+790,12768.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 1 car"
+791,12782.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 1 car"
+792,12796.jpg,building | city | city street | crosswalk | intersection | office building | road | street corner | street sign,"1 person, 1 car"
+793,12810.jpg,city | city street | cross | crosswalk | person | intersection | road | street sign,"1 person, 2 car"
+794,12824.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 1 car"
+795,12838.jpg,baby carriage | bike lane | city | city street | cross | crosswalk | person | intersection | man | push | ride | road | scooter | street sign,"2 person, 1 car, 1 skateboard"
+796,12852.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | motorcycle | ride | road | scooter,"4 person, 1 bicycle, 2 car, 1 motorcycle, 1 skateboard"
+797,12866.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road,"3 person, 1 bicycle, 1 car"
+798,12880.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road,"4 person, 1 car"
+799,12894.jpg,biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | motorcycle | ride | road,"1 person, 2 car"
+800,12908.jpg,city | city street | cross | crosswalk | person | intersection | road | walk,"3 person, 1 car"
+801,12922.jpg,biker | bike lane | city | city street | cross | crosswalk | person | intersection | ride | road | street sign | walk,"2 person, 1 car"
+802,12936.jpg,cross | crosswalk | person | man | pedestrian | road | walk | zebra crossing,"4 person, 1 skateboard"
+803,12950.jpg,boy | cross | crosswalk | person | man | road | walk | zebra crossing,"4 person, 1 handbag"
+804,12964.jpg,couple | cross | crosswalk | person | man | pedestrian | road | walk | woman,"3 person, 2 skateboard"
+805,12978.jpg,couple | cross | crosswalk | person | jog | man | road | skateboarder | walk | woman,"3 person, 1 car, 3 skateboard"
+806,12992.jpg,cross | crosswalk | person | jog | man | road | walk | woman,"3 person, 1 handbag, 2 skateboard"
+807,13006.jpg,cross | crosswalk | person | jog | man | road | walk | woman,"2 person, 1 skateboard"
+808,13020.jpg,couple | cross | crosswalk | person | jog | man | ride | road | skateboarder | walk | woman,3 person
+809,13034.jpg,cross | crosswalk | person | jog | man | road | skateboarder | walk,4 person
+810,13048.jpg,biker | city | city street | couple | cross | crosswalk | person | jog | man | ride | road | walk,"3 person, 1 skateboard"
+811,13062.jpg,biker | city | city street | cross | crosswalk | person | skate | man | ride | road | skateboarder,"2 person, 1 skateboard"
+812,13090.jpg,city | city street | cross | crosswalk | person | jog | man | ride | road | skateboarder | walk,3 person
+813,13104.jpg,biker | city | city street | cross | crosswalk | person | intersection | ride | road,"3 person, 1 car"
+814,13118.jpg,biker | city | city street | cross | crosswalk | person | intersection | man | ride | road,2 person
+815,13216.jpg,building | city | city street | crosswalk | intersection | office building | road | street corner | street sign,"1 person, 1 car"
+816,13230.jpg,building | city | city street | crosswalk | person | intersection | road | street sign,"1 person, 1 car"
+817,13244.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign,1 person
+818,13258.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign,1 person
+819,13272.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,1 person
+820,13286.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+821,13328.jpg,building | city | city street | crosswalk | curve | intersection | office building | road | street corner | street sign,"1 person, 1 car"
+822,13356.jpg,building | city | city street | crosswalk | intersection | office building | road | street corner | street sign,"1 person, 1 car"
+823,13370.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | street sign | walk,"1 person, 1 car"
+824,13384.jpg,city | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"2 person, 2 car"
+825,13398.jpg,cross | crosswalk | person | man | road | walk,6 person
+826,13412.jpg,child | cross | crosswalk | girl | person | student | road | school | walk | woman,4 person
+827,13650.jpg,car | city street | crosswalk | drive | intersection | jeep | road | school bus | suv | vehicle | yellow,"4 person, 3 car, 1 truck"
+828,13664.jpg,car | city street | crosswalk | drive | intersection | road | school bus | vehicle | yellow,"5 person, 3 car, 2 truck"
+829,13678.jpg,car | city street | drive | intersection | jeep | road | school bus | suv | vehicle | yellow,"4 person, 4 car, 1 truck"
+830,13692.jpg,car | city street | crosswalk | drive | intersection | road | school bus | travel | vehicle | yellow,"4 person, 4 car, 1 truck"
+831,13706.jpg,bus | car | city | city street | crosswalk | drive | intersection | road | school bus | travel | yellow,"3 person, 2 car, 1 bus, 1 truck"
+832,13720.jpg,car | city | city street | crosswalk | drive | intersection | road | school bus | yellow,"3 person, 2 car, 1 truck"
+833,13734.jpg,car | city | city street | crosswalk | drive | intersection | road | school bus | yellow,"2 person, 3 car, 1 bus, 1 truck"
+834,13748.jpg,car | city | city street | cross | crosswalk | drive | person | intersection | road,"2 person, 3 car, 1 bus, 1 truck"
+835,13762.jpg,car | city | city street | crosswalk | drive | intersection | road | school bus | street sign | yellow,"2 person, 2 car, 1 truck"
+836,13776.jpg,car | city | city street | cross | crosswalk | person | intersection | man | ride | road | walk,"2 person, 3 car, 1 bus, 1 truck"
+837,13790.jpg,car | city | city street | cross | crosswalk | person | intersection | man | ride | road | walk,"3 person, 2 car, 1 truck"
+838,13804.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"2 person, 2 car, 1 truck"
+839,13818.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"2 person, 2 car, 1 truck"
+840,13832.jpg,car | city | city street | cross | crosswalk | person | intersection | man | ride | road | skateboarder | walk,"3 person, 6 car, 1 truck"
+841,13846.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk | woman,"3 person, 5 car"
+842,13860.jpg,cross | crosswalk | person | jog | man | ride | road | skateboarder | walk | woman,"2 person, 3 car"
+843,13874.jpg,cross | crosswalk | person | skate | intersection | man | ride | road | skateboard | skateboarder | woman,"2 person, 6 car"
+844,13888.jpg,cross | crosswalk | person | skate | man | ride | road | skateboard | skateboarder,"2 person, 2 car"
+845,13930.jpg,cross | crosswalk | girl | person | skate | jog | man | ride | road | roller skate | scooter | skateboard | skateboarder | walk | woman,"3 person, 1 car, 1 skateboard"
+846,13944.jpg,blue | cross | crosswalk | dress | girl | road | walk | woman | zebra crossing,"2 person, 4 car"
+847,13958.jpg,blue | cross | crosswalk | dress | person | road | walk | woman,"2 person, 3 car, 1 bench"
+848,13972.jpg,city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"3 person, 2 car"
+849,14000.jpg,building | city | city street | crosswalk | intersection | office building | road | street corner | street sign,1 person
+850,14028.jpg,blue | building | bus | city | city bus | city street | curb | drive | road | tour bus | travel | white,"2 person, 1 bus"
+851,14042.jpg,advertisement | bus | bus stop | city bus | city street | curb | drive | road | tour bus | white,1 bus
+852,14056.jpg,advertisement | billboard | bus | city bus | image | man | poster | road | tour bus,1 person
+853,14070.jpg,bus | bus stop | city bus | cross | crosswalk | curb | drive | person | image | man | road | tour bus,"1 person, 1 bus"
+854,14084.jpg,bus | bus stop | city bus | cross | crosswalk | drive | flag | person | man | road | stand | tour bus | white,"1 person, 1 bus"
+855,14098.jpg,bus | city bus | crosswalk | curb | drive | intersection | road | tour bus | travel | white,1 truck
+856,14112.jpg,bus | car | city bus | city street | crosswalk | curb | drive | intersection | license plate | road | travel | white,"1 car, 1 bus, 1 truck"
+857,14126.jpg,bus | car | city bus | city street | crosswalk | drive | intersection | license plate | minivan | road | silver | suv | travel | van | vehicle,"1 car, 1 bus"
+858,14140.jpg,bus | car | city bus | cross | crosswalk | drive | intersection | license plate | minivan | road | suv | van | vehicle,"1 person, 1 car, 1 truck"
+859,14154.jpg,ambulance | car | cross | crosswalk | drive | intersection | road | vehicle | white,"2 person, 2 car, 1 truck"
+860,14168.jpg,bus | car | city bus | city street | curb | drive | intersection | license plate | road | travel | white,"1 car, 1 bus, 1 truck"
+861,14182.jpg,blue | bus | bus stop | city | city bus | city street | curb | drive | road | white,"1 car, 2 bus, 1 truck"
+862,14196.jpg,blue | bus | bus stop | city | city bus | city street | curb | drive | road | white,1 bus
+863,14210.jpg,bus | bus stop | city | city bus | city street | crosswalk | curb | drive | road | white,1 bus
+864,14224.jpg,bus | bus stop | city | city bus | city street | crosswalk | curb | drive | road | tour bus | white,1 bus
+865,14238.jpg,bus | bus stop | city | city bus | city street | crosswalk | curb | drive | road | tour bus | white,1 train
+866,14252.jpg,bus | bus stop | city | city bus | city street | crosswalk | curb | drive | road | tour bus | travel | white,1 bus
+867,14266.jpg,bus | bus stop | city | city bus | city street | crosswalk | curb | drive | road | tour bus | white,1 bus
+868,14280.jpg,blue | bus | city bus | crosswalk | curb | drive | road | tour bus | travel | white,1 bus
+869,14294.jpg,bus | city bus | city street | crosswalk | curb | drive | intersection | road | tour bus | travel | white,"1 person, 1 bus"
+870,14308.jpg,bus | city bus | city street | crosswalk | curb | decker bus | drive | intersection | road | travel | white,1 truck
+871,14322.jpg,bus | city bus | city street | cross | crosswalk | drive | intersection | road | travel | white,"1 person, 1 truck"
+872,14336.jpg,bus | city bus | city street | crosswalk | drive | intersection | road | travel | white,"1 bus, 1 truck"
+873,14350.jpg,bus | car | city | city bus | city street | crosswalk | decker bus | drive | intersection | road | travel | white,"1 car, 1 bus, 1 truck"
+874,14364.jpg,bus | car | city | city bus | city street | crosswalk | drive | intersection | road | street sign | travel | white,"1 person, 1 car, 1 truck"
+875,14378.jpg,bus | car | city | city bus | city street | crosswalk | drive | intersection | road | street corner | street sign | travel | white,"1 person, 1 car, 1 bus"
+876,14392.jpg,bus | car | city | city bus | city street | crosswalk | drive | intersection | road | street corner | street sign | travel,"2 person, 2 car, 1 bus"
+877,14406.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,"1 person, 1 truck"
+878,14420.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 1 bus"
+879,14434.jpg,biker | bike lane | city | city street | crosswalk | person | intersection | man | ride | road | street corner | street sign | traffic sign,"2 person, 1 truck"
+880,14448.jpg,biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road | street corner | street sign,"2 person, 1 truck"
+881,14462.jpg,biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road | street sign,"3 person, 1 car"
+882,14476.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road | walk,"2 person, 1 car, 1 bus, 1 truck"
+883,14490.jpg,biker | city | city street | cross | crosswalk | person | intersection | man | ride | road | skateboarder | walk,"2 person, 2 car, 1 truck"
+884,14518.jpg,bicycle | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road,"2 person, 1 car, 1 truck"
+885,14546.jpg,biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | ride | road,2 person
+886,14560.jpg,city | city street | cross | crosswalk | person | jog | man | marathon | road | run | runner | woman,"2 person, 1 car, 1 truck"
+887,14574.jpg,cross | crosswalk | person | jog | man | road | walk | woman,"4 person, 2 car, 1 truck"
+888,14588.jpg,cross | crosswalk | person | jog | road | walk | woman,"3 person, 1 car"
+889,14602.jpg,cross | crosswalk | girl | person | jog | road | walk | woman,2 person
+890,14616.jpg,cross | crosswalk | girl | person | jog | marathon | road | run | runner | woman,2 person
+891,14630.jpg,cross | crosswalk | girl | jog | road | walk | woman | zebra crossing,"4 person, 1 skateboard"
+892,14980.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car"
+893,14994.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 5 car"
+894,15008.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car"
+895,15022.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+896,15036.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+897,15050.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 2 car"
+898,15064.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | traffic sign | walk,"1 person, 4 car"
+899,15078.jpg,city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | traffic sign | walk,"2 person, 1 car, 1 skateboard"
+900,15092.jpg,city | city street | cross | crosswalk | person | intersection | man | road | street sign | traffic sign | walk,"2 person, 1 car, 1 skateboard"
+901,15106.jpg,city | cross | crosswalk | person | intersection | man | pedestrian | road | shopping bag | street sign | walk | woman,"1 person, 1 car, 1 handbag"
+902,15120.jpg,bag | cross | crosswalk | person | road | shopping bag | walk | woman,2 person
+903,15134.jpg,bag | cross | crosswalk | road | shopping bag | walk | woman,"1 person, 1 handbag"
+904,15148.jpg,briefcase | cross | crosswalk | person | man | road | shopping bag | walk | woman,"1 person, 1 car"
+905,15162.jpg,cross | crosswalk | girl | jog | road | stand | walk | woman | zebra crossing,1 person
+906,15176.jpg,cross | crosswalk | girl | jog | road | walk | woman,2 person
+907,15190.jpg,city | city street | crosswalk | person | intersection | road | street corner | street sign | traffic sign,1 person
+908,15204.jpg,city | city street | crosswalk | person | intersection | road | street corner | street sign | traffic sign,2 person
+909,15218.jpg,building | city | city street | crosswalk | person | intersection | road | street corner | street sign | traffic sign,2 person
+910,15232.jpg,city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | traffic sign,2 person
+911,15246.jpg,city | city street | cross | crosswalk | person | intersection | road | street sign | traffic sign,4 person
+912,15260.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 person
+913,15288.jpg,building | city | city street | cross | crosswalk | person | intersection | office building | road | street corner | street sign | walk,2 person
+914,15386.jpg,city | city street | cross | crosswalk | person | intersection | man | road | street sign | traffic sign | walk,"1 person, 2 car"
+915,15400.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 2 car"
+916,15414.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+917,15428.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+918,15442.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+919,15456.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 1 car"
+920,15484.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 person
+921,15582.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+922,15596.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign,1 car
+923,15624.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+924,15638.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+925,15680.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign,2 car
+926,15694.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign,2 car
+927,15708.jpg,black | car | city | city street | cross | crosswalk | drive | intersection | road | sedan | suv,2 car
+928,15722.jpg,black | car | city street | crosswalk | drive | intersection | road | suv,1 car
+929,15736.jpg,car | city | city street | crosswalk | drive | intersection | road | street sign | travel,1 car
+930,15750.jpg,car | city | city street | crosswalk | drive | intersection | road | street sign,2 car
+931,15764.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,1 car
+932,15778.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+933,15792.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+934,15806.jpg,cross | crosswalk | dress | person | road | walk | woman,"2 person, 2 car, 1 skateboard"
+935,15834.jpg,cross | crosswalk | person | jog | man | road | walk | woman,"1 person, 1 car, 1 handbag"
+936,15848.jpg,swimwear | cross | crosswalk | person | jog | man | road | shirtless | walk | woman,"1 person, 1 car, 1 skateboard"
+937,15862.jpg,cross | crosswalk | person | jog | man | road | walk | woman,"1 person, 3 car"
+938,15876.jpg,cross | crosswalk | girl | person | jog | road | walk | woman,"1 person, 3 car"
+939,15890.jpg,cross | crosswalk | person | jog | man | ride | road | skateboarder | walk | woman,"1 person, 2 car, 1 handbag"
+940,16058.jpg,couple | cross | crosswalk | person | man | pedestrian | road | walk | woman | zebra crossing,"5 person, 1 car"
+941,16072.jpg,cross | crosswalk | person | intersection | man | pedestrian | road | walk,"3 person, 1 car"
+942,16086.jpg,cross | crosswalk | person | man | pedestrian | road | walk,"4 person, 1 car"
+943,16100.jpg,bicycle | biker | city | city street | couple | cross | crosswalk | person | man | pedestrian | ride | road | walk,"3 person, 1 bicycle"
+944,16114.jpg,biker | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"4 person, 1 car"
+945,16128.jpg,bicycle | bicycle helmet | biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"5 person, 1 car"
+946,16142.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | skateboarder | walk,"5 person, 2 car"
+947,16156.jpg,biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | pedestrian | ride | road | walk,"7 person, 2 car, 1 truck"
+948,16170.jpg,bicycle | biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | ride | road,"4 person, 3 car"
+949,16184.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign,"2 person, 4 car"
+950,16198.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign,"2 person, 2 car"
+951,16212.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"2 person, 3 car"
+952,16226.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,2 car
+953,16240.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,1 person
+954,16254.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 2 car"
+955,16268.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign,"2 person, 3 car"
+956,16282.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+957,16296.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,2 car
+958,16310.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,1 car
+959,16352.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign,1 person
+960,16366.jpg,building | city | city street | crosswalk | person | intersection | road | street corner | street sign,1 person
+961,16394.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+962,16408.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+963,16422.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign,3 car
+964,16436.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+965,16450.jpg,building | car | city | city street | crosswalk | intersection | motorcycle | road | street corner | street sign | traffic sign,2 car
+966,16464.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,1 car
+967,16520.jpg,biker | city | city street | cross | crosswalk | person | man | ride | road | street sign | walk,1 car
+968,16534.jpg,cross | crosswalk | dress | girl | road | walk | woman | zebra crossing,"1 person, 1 car, 1 skateboard"
+969,16548.jpg,cross | crosswalk | dress | person | pedestrian | road | walk | woman | zebra crossing,"2 person, 2 car, 1 handbag"
+970,16562.jpg,couple | cross | crosswalk | person | man | pedestrian | road | walk | woman | zebra crossing,"4 person, 1 car, 1 handbag"
+971,16576.jpg,couple | cross | crosswalk | dress | person | man | road | walk | woman | zebra crossing,"4 person, 1 car, 3 handbag"
+972,16590.jpg,cross | crosswalk | person | man | pedestrian | road | shopping bag | walk | woman | zebra crossing,"4 person, 1 car, 1 handbag"
+973,16604.jpg,cross | crosswalk | person | man | pedestrian | road | walk | woman | zebra crossing,3 person
+974,16618.jpg,cross | crosswalk | person | man | pedestrian | road | walk | woman | zebra crossing,5 person
+975,16632.jpg,cross | crosswalk | person | man | road | walk | woman | zebra crossing,8 person
+976,16646.jpg,city | cross | crosswalk | person | man | ride | road | skateboarder | walk | woman,6 person
+977,16660.jpg,biker | city | city street | cross | crosswalk | person | intersection | man | ride | road | skateboarder,4 person
+978,16674.jpg,biker | bike lane | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,5 person
+979,16688.jpg,biker | city | city street | cross | crosswalk | person | intersection | man | ride | road | walk,"3 person, 1 car"
+980,16702.jpg,bicycle | biker | bike lane | taxi | car | city | city street | cross | crosswalk | person | intersection | man | ride | road | yellow,"2 person, 3 car, 1 motorcycle"
+981,16716.jpg,taxi | car | city street | crosswalk | drive | intersection | license plate | road | yellow,3 car
+982,16730.jpg,biker | taxi | car | city street | cross | crosswalk | drive | person | intersection | man | ride | road | yellow,"3 person, 1 bicycle, 3 car"
+983,16744.jpg,taxi | car | city street | cross | crosswalk | drive | intersection | road | yellow,"4 car, 1 truck"
+984,16758.jpg,taxi | car | city | city street | crosswalk | drive | intersection | road | yellow,"3 car, 1 truck"
+985,16772.jpg,taxi | car | city | city street | cross | crosswalk | drive | intersection | road | travel | yellow,3 car
+986,16786.jpg,taxi | car | city | city street | crosswalk | drive | intersection | road | street sign | yellow,"3 person, 3 car"
+987,16800.jpg,taxi | car | city | city street | crosswalk | drive | intersection | road | street sign | yellow,3 car
+988,16814.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,3 car
+989,16828.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,3 car
+990,16842.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 1 car"
+991,16856.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+992,16870.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,1 person
+993,16884.jpg,city | city street | cross | crosswalk | person | intersection | road | street corner | street sign,"1 person, 1 car"
+994,16898.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 2 car"
+995,16912.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 2 car"
+996,16996.jpg,building | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,"1 person, 2 car"
+997,17010.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,"2 person, 2 car, 1 bench"
+998,17024.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"2 person, 3 car"
+999,17038.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"2 person, 3 car"
+1000,17052.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | suv,"2 person, 2 car"
+1001,17066.jpg,black | car | city street | cross | crosswalk | drive | intersection | road | suv | vehicle,"1 person, 1 car"
+1002,17080.jpg,car | city street | cross | crosswalk | drive | intersection | road,"1 person, 1 car"
+1003,17094.jpg,car | city street | cross | crosswalk | drive | intersection | road,"2 person, 1 car"
+1004,17108.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | street sign,"2 person, 3 car"
+1005,17150.jpg,city | city street | crosswalk | person | intersection | road | street corner | street sign | traffic sign,"1 person, 1 car"
+1006,17164.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"2 person, 1 car"
+1007,17178.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"2 person, 2 car"
+1008,17192.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"2 person, 2 car"
+1009,17206.jpg,car | city | city street | construction worker | cross | crosswalk | person | intersection | man | road | street sign | walk,"3 person, 1 car"
+1010,17220.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 3 car"
+1011,17234.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"2 person, 3 car"
+1012,17248.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street sign | walk,"2 person, 2 car"
+1013,17262.jpg,city | city street | cross | crosswalk | person | intersection | man | road | street corner | street sign | walk,3 car
+1014,17276.jpg,cross | crosswalk | girl | person | road | short | walk | woman | zebra crossing,"2 person, 1 car, 1 skateboard"
+1015,17290.jpg,cross | crosswalk | person | pedestrian | road | walk | zebra crossing,"7 person, 1 car, 2 skateboard"
+1016,17304.jpg,child | cross | crosswalk | girl | person | road | walk | woman | zebra crossing,"7 person, 1 car, 1 backpack, 2 skateboard"
+1017,17318.jpg,child | cross | crosswalk | girl | road | walk | woman | zebra crossing,"5 person, 1 car, 1 backpack, 1 skateboard"
+1018,17332.jpg,cross | crosswalk | girl | person | intersection | road | walk | woman | zebra crossing,9 person
+1019,17346.jpg,cross | crosswalk | person | jog | man | marathon | pedestrian | road | walk | woman | zebra crossing,"5 person, 1 car"
+1020,17360.jpg,cross | crosswalk | person | man | pedestrian | road | walk | zebra crossing,"5 person, 2 bench"
+1021,17374.jpg,city | cross | crosswalk | person | jog | man | marathon | pedestrian | road | walk,"7 person, 1 car"
+1022,17388.jpg,city | cross | crosswalk | person | intersection | jog | man | pedestrian | road | walk,"5 person, 2 car"
+1023,17472.jpg,car | cross | crosswalk | person | man | road | stand | suv | walk,"4 person, 5 car, 1 bench"
+1024,17486.jpg,car | city street | cross | crosswalk | person | intersection | man | road | stand | walk,"3 person, 4 car, 1 bench"
+1025,17500.jpg,black | car | city street | cross | crosswalk | drive | person | intersection | man | road | stand | walk,"5 person, 4 car, 1 bench"
+1026,17514.jpg,car | cross | crosswalk | person | intersection | man | road | shirt | walk,"2 person, 4 car"
+1027,17528.jpg,car | couple | cross | crosswalk | person | intersection | man | pedestrian | road | walk | zebra crossing,"3 person, 4 car, 4 skateboard"
+1028,17654.jpg,cross | crosswalk | person | man | road | walk | zebra crossing,"8 person, 3 car"
+1029,17668.jpg,child | cross | crosswalk | person | pedestrian | road | walk | zebra crossing,"7 person, 4 car, 1 backpack, 2 handbag"
+1030,17682.jpg,cross | crosswalk | person | intersection | pedestrian | road | walk | zebra crossing,"9 person, 6 car, 1 backpack, 4 handbag"
+1031,17710.jpg,cross | crosswalk | girl | person | road | sing | walk | zebra crossing,"8 person, 7 car, 1 backpack"
+1032,17724.jpg,cross | crosswalk | girl | person | road | walk | woman | zebra crossing,"10 person, 2 car"
+1033,17738.jpg,child | cross | crosswalk | girl | person | intersection | pedestrian | road | walk | woman | zebra crossing,"7 person, 2 car"
+1034,17752.jpg,cross | crosswalk | girl | person | road | walk | woman | zebra crossing,"6 person, 2 car"
+1035,17766.jpg,city | city street | cross | crosswalk | person | intersection | pedestrian | road | walk,"7 person, 2 car"
+1036,17780.jpg,city | city street | cross | crosswalk | person | intersection | pedestrian | road | walk,"6 person, 3 car"
+1037,17794.jpg,car | city street | cross | crosswalk | person | intersection | pedestrian | road | walk | woman,"5 person, 2 car"
+1038,17808.jpg,car | city street | cross | crosswalk | person | intersection | pedestrian | road | walk,"7 person, 2 car"
+1039,17822.jpg,cross | crosswalk | person | jog | pedestrian | road | walk | woman,"6 person, 2 car, 1 handbag"
+1040,17836.jpg,cross | crosswalk | person | man | road | walk | woman,"9 person, 2 car"
+1041,17850.jpg,cross | crosswalk | girl | person | road | walk | woman | zebra crossing,"5 person, 4 car"
+1042,17864.jpg,couple | cross | crosswalk | girl | person | road | walk | woman | zebra crossing,"8 person, 3 car, 1 handbag, 1 suitcase"
+1043,17878.jpg,cross | crosswalk | girl | person | road | stand | walk | woman,"5 person, 3 car, 1 bench, 2 skateboard"
+1044,17892.jpg,city street | cross | crosswalk | person | pedestrian | road | walk | woman,"4 person, 2 car"
+1045,17906.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"3 person, 3 car"
+1046,17948.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 person, 4 car"
+1047,17962.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 person, 4 car"
+1048,17976.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+1049,17990.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car"
+1050,18004.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+1051,18018.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+1052,18032.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1053,18046.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+1054,18060.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car"
+1055,18074.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 4 car"
+1056,18088.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car"
+1057,18172.jpg,cross | crosswalk | girl | person | skate | jog | man | ride | road | skateboard | skateboarder | walk | woman | zebra crossing,"2 person, 3 car"
+1058,18186.jpg,cross | crosswalk | person | jog | man | road | skateboarder | walk | woman | zebra crossing,"3 person, 3 car, 1 bench, 2 skateboard"
+1059,18200.jpg,cross | crosswalk | person | man | road | skateboarder | walk | zebra crossing,"3 person, 2 car, 1 backpack, 2 skateboard"
+1060,18214.jpg,cross | crosswalk | direct | person | man | police | road | stand | walk,"4 person, 5 car"
+1061,18228.jpg,cross | crosswalk | person | man | road | walk | zebra crossing,"2 person, 3 car, 1 backpack"
+1062,18242.jpg,cross | crosswalk | person | man | road | stand | walk,"2 person, 5 car, 1 backpack"
+1063,18256.jpg,cross | crosswalk | person | man | road | stand | walk,"1 person, 4 car, 1 bench, 1 backpack"
+1064,18270.jpg,backpack | cross | crosswalk | person | man | road | walk,"1 person, 4 car, 1 backpack"
+1065,18284.jpg,backpack | cross | crosswalk | person | man | road | walk | zebra crossing,"1 person, 4 car, 1 backpack"
+1066,18298.jpg,backpack | cross | crosswalk | person | man | road | walk | zebra crossing,"1 person, 2 car, 1 backpack"
+1067,18312.jpg,cross | crosswalk | person | man | road | walk | zebra crossing,"2 person, 3 car, 1 bench, 1 backpack"
+1068,18326.jpg,cross | crosswalk | person | man | pedestrian | road | skateboarder | walk | zebra crossing,"3 person, 2 car, 1 backpack"
+1069,18340.jpg,boy | cross | crosswalk | person | man | road | skateboarder | walk | zebra crossing,"4 person, 2 car, 1 backpack"
+1070,18354.jpg,child | cross | crosswalk | person | man | pedestrian | road | walk | woman | zebra crossing,"5 person, 2 car, 1 skateboard"
+1071,18368.jpg,cross | crosswalk | person | pedestrian | road | walk | zebra crossing,"7 person, 2 car"
+1072,18382.jpg,cross | crosswalk | person | man | pedestrian | road | walk | woman | zebra crossing,"5 person, 5 car"
+1073,18396.jpg,cross | crosswalk | hand | person | man | road | shopping bag | walk | woman | zebra crossing,"6 person, 3 car"
+1074,18634.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk | woman,"4 person, 6 car"
+1075,18648.jpg,car | city | city street | cross | crosswalk | person | intersection | pedestrian | road | walk,"4 person, 6 car"
+1076,18662.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | man | ride | road | street sign | walk,"4 person, 6 car"
+1077,18676.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street corner | street sign | traffic sign | walk,"3 person, 6 car"
+1078,18690.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | traffic sign | walk,"3 person, 7 car"
+1079,18704.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 7 car"
+1080,18718.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 7 car"
+1081,18732.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 8 car"
+1082,18746.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,7 car
+1083,18760.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1084,18774.jpg,black | car | city | city street | cross | crosswalk | drive | intersection | road | suv | vehicle,"1 person, 8 car"
+1085,18788.jpg,black | car | city street | crosswalk | drive | intersection | road | street sign,8 car
+1086,18802.jpg,car | city | city street | crosswalk | drive | intersection | road | street sign | traffic sign,"1 person, 7 car"
+1087,18816.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | stand | street corner | walk | woman,10 car
+1088,18830.jpg,boy | cross | crosswalk | dress | person | man | red | road | shirt | walk | woman | zebra crossing,"1 person, 8 car"
+1089,18844.jpg,cross | crosswalk | person | jog | man | road | shirt | shirtless | short | walk | zebra crossing,"4 person, 8 car, 1 skateboard"
+1090,18858.jpg,cross | crosswalk | person | jog | man | pedestrian | road | walk | zebra crossing,"4 person, 7 car, 2 skateboard"
+1091,18872.jpg,cross | crosswalk | person | man | pedestrian | road | shirt | shirtless | walk | zebra crossing,"7 person, 6 car, 1 skateboard"
+1092,18886.jpg,cross | crosswalk | person | man | road | shirtless | walk,"6 person, 5 car, 1 backpack"
+1093,18900.jpg,cross | crosswalk | person | jog | man | marathon | road | runner | shirtless | walk,"5 person, 5 car, 3 skateboard"
+1094,18914.jpg,cross | crosswalk | person | man | road | walk | zebra crossing,"6 person, 4 car, 2 backpack, 1 handbag"
+1095,18928.jpg,cross | crosswalk | person | jog | man | road | walk,"6 person, 5 car, 1 backpack"
+1096,18942.jpg,cross | crosswalk | person | man | pedestrian | road | walk,"6 person, 1 bicycle, 5 car, 1 handbag"
+1097,18956.jpg,cross | crosswalk | person | jog | pedestrian | road | walk,"5 person, 3 car"
+1098,18970.jpg,cross | crosswalk | person | jog | man | marathon | pedestrian | road | walk,"5 person, 4 car, 1 backpack"
+1099,18984.jpg,city | city street | cross | crosswalk | person | intersection | jog | man | pedestrian | road | walk,"3 person, 7 car"
+1100,18998.jpg,bicycle | biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"4 person, 7 car"
+1101,19012.jpg,biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"4 person, 4 car"
+1102,19026.jpg,bicycle | biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"3 person, 6 car"
+1103,19040.jpg,biker | taxi | car | city | city street | cross | crosswalk | person | intersection | ride | road | street sign,"3 person, 7 car"
+1104,19054.jpg,car | city | city street | construction worker | crosswalk | person | intersection | road | street corner | street sign | traffic sign | walk,"5 person, 6 car"
+1105,19068.jpg,city | city street | crosswalk | person | intersection | road | street corner | street sign,"3 person, 4 car"
+1106,19110.jpg,building | car | city | city street | crosswalk | curve | intersection | office building | road | street corner | street sign | traffic sign,4 car
+1107,19124.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,4 car
+1108,19138.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 5 car"
+1109,19152.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 5 car"
+1110,19166.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+1111,19180.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1112,19194.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1113,19208.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1114,19222.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1115,19236.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,7 car
+1116,19292.jpg,black | car | cross | crosswalk | drive | intersection | jeep | road | suv | vehicle,6 car
+1117,19306.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | street sign,9 car
+1118,19320.jpg,car | city | city street | crosswalk | drive | intersection | road | street sign | traffic sign,11 car
+1119,19334.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,7 car
+1120,19348.jpg,black | car | city | city street | crosswalk | drive | intersection | road | street sign,13 car
+1121,19418.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,11 car
+1122,19432.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,9 car
+1123,19446.jpg,building | car | city | city street | crosswalk | drive | intersection | road | street sign | traffic sign,8 car
+1124,19460.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,8 car
+1125,19474.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,7 car
+1126,19488.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,8 car
+1127,19530.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,7 car
+1128,19544.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,8 car
+1129,19558.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,7 car
+1130,19572.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1131,19586.jpg,cross | crosswalk | person | man | road | street corner | walk,"8 car, 1 bench"
+1132,19600.jpg,backpack | boy | cross | crosswalk | person | man | music | road | stand | walk,"1 person, 5 car, 1 backpack"
+1133,19614.jpg,boy | cross | crosswalk | person | man | road | toy | walk,"2 person, 7 car, 1 backpack"
+1134,19628.jpg,cross | crosswalk | person | man | road | walk | woman,"3 person, 10 car, 1 backpack, 1 skateboard"
+1135,19642.jpg,cross | crosswalk | person | man | road | skateboarder | walk,"2 person, 8 car, 1 backpack"
+1136,19656.jpg,cross | crosswalk | person | intersection | man | road | walk | woman,"2 person, 9 car, 1 backpack"
+1137,19670.jpg,car | cross | crosswalk | person | intersection | man | pedestrian | road | skateboarder | walk,"2 person, 8 car"
+1138,19684.jpg,car | cross | crosswalk | person | intersection | man | pedestrian | road | street sign | walk,"2 person, 7 car"
+1139,19698.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | street sign | walk,"1 person, 10 car"
+1140,19712.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,9 car
+1141,19726.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,10 car
+1142,19740.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,12 car
+1143,19754.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,11 car
+1144,19768.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"7 car, 1 bench"
+1145,19782.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"7 car, 1 bench"
+1146,19796.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,7 car
+1147,19810.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,7 car
+1148,19824.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1149,19838.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"7 car, 1 bench"
+1150,19852.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1151,19866.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,9 car
+1152,19880.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,5 car
+1153,19936.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1154,20118.jpg,car | cross | crosswalk | person | intersection | man | ride | road | skateboarder | walk | zebra crossing,"4 person, 4 car"
+1155,20132.jpg,bicycle | biker | car | city | cross | crosswalk | person | intersection | man | motorcycle | ride | road,"4 person, 4 car, 1 skateboard"
+1156,20146.jpg,biker | car | city street | cross | crosswalk | person | intersection | man | motorcycle | motorcyclist | ride | road,"4 person, 3 car"
+1157,20160.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | man | motorcycle | motorcyclist | ride | road,"4 person, 3 car"
+1158,20174.jpg,car | city | city street | cross | crosswalk | direct | person | intersection | man | motorcycle | motorcyclist | ride | road | street sign,"5 person, 2 car, 1 skateboard"
+1159,20188.jpg,car | city | city street | cross | crosswalk | person | intersection | motorcycle | road | street corner | street sign,"4 person, 3 car"
+1160,20202.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | man | motorcycle | ride | road | street corner | street sign | traffic sign,"3 person, 3 car"
+1161,20216.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 person, 2 car"
+1162,20230.jpg,car | city | city street | crosswalk | person | intersection | road | street corner | street sign,"4 person, 3 car"
+1163,20244.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street corner | street sign | walk,"4 person, 3 car"
+1164,20258.jpg,car | city | city street | cross | crosswalk | person | intersection | man | ride | road | street corner | street sign | walk,"2 person, 3 car"
+1165,20272.jpg,car | city street | cross | crosswalk | drive | person | intersection | man | pedestrian | road | walk,"5 person, 3 car"
+1166,20286.jpg,black | car | city street | cross | crosswalk | drive | intersection | road,"3 person, 2 car"
+1167,20300.jpg,black | car | city street | cross | crosswalk | drive | person | intersection | road | walk,"2 person, 5 car"
+1168,20314.jpg,biker | car | city | city street | cross | crosswalk | drive | person | intersection | man | ride | road,"3 person, 2 car"
+1169,20328.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | walk,"2 person, 5 car"
+1170,20342.jpg,car | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"2 person, 2 car"
+1171,20356.jpg,car | couple | cross | crosswalk | person | intersection | man | pedestrian | road | walk | woman,"2 person, 4 car, 1 bench"
+1172,20370.jpg,couple | cross | crosswalk | hand | person | intersection | man | road | walk | woman | zebra crossing,"2 person, 4 car"
+1173,20468.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,6 car
+1174,20482.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1175,20496.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+1176,20510.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1177,20524.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1178,20538.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 6 car"
+1179,20552.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 7 car"
+1180,20566.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 4 car"
+1181,20580.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | white,"1 person, 6 car"
+1182,20622.jpg,car | city | city street | crosswalk | drive | intersection | road | street sign,8 car
+1183,20650.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,"1 person, 2 car"
+1184,20664.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street corner | street sign | walk,"1 person, 5 car"
+1185,20678.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+1186,20692.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 2 car"
+1187,20720.jpg,city | cross | crosswalk | person | intersection | man | road | street corner | street sign | walk,"2 person, 4 car, 1 bench"
+1188,20734.jpg,city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | street corner | street sign | walk,"2 person, 5 car"
+1189,20748.jpg,city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | street corner | street sign | walk,"2 person, 4 car"
+1190,20762.jpg,cross | crosswalk | person | intersection | road | street corner | street sign | walk | woman,"1 person, 7 car"
+1191,20958.jpg,cross | crosswalk | person | intersection | pedestrian | road | walk | woman | zebra crossing,"5 person, 4 car, 1 truck, 1 backpack"
+1192,20986.jpg,city | cross | crosswalk | person | pedestrian | road | walk | woman | zebra crossing,"4 person, 2 car, 1 truck"
+1193,21000.jpg,city | couple | cross | crosswalk | person | man | pedestrian | road | walk,3 person
+1194,21014.jpg,city | city street | cross | crosswalk | person | intersection | pedestrian | road | walk | zebra crossing,"5 person, 1 car"
+1195,21028.jpg,city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"4 person, 4 car"
+1196,21042.jpg,city | city street | cross | crosswalk | person | intersection | pedestrian | road | walk,"4 person, 3 car"
+1197,21056.jpg,city | city street | cross | crosswalk | person | intersection | pedestrian | road | street corner | street sign | walk,"4 person, 2 car"
+1198,21070.jpg,city | city street | construction worker | cross | crosswalk | person | intersection | man | road | street corner | street sign | walk,"6 person, 6 car"
+1199,21084.jpg,city | city street | cross | crosswalk | person | intersection | pedestrian | road | street corner | walk,"5 person, 5 car"
+1200,21098.jpg,city | city street | cross | crosswalk | person | intersection | man | pedestrian | road | walk,"4 person, 5 car"
+1201,21112.jpg,city | city street | cross | crosswalk | person | intersection | road | street corner | street sign,"1 person, 5 car"
+1202,21154.jpg,car | city | city street | cross | crosswalk | person | intersection | road | stand | street corner | street sign | walk,"3 person, 4 car"
+1203,21168.jpg,cross | crosswalk | person | intersection | road | street corner | walk,"3 person, 7 car"
+1204,21182.jpg,city | city street | cross | crosswalk | person | intersection | pedestrian | road | street sign | walk,"4 person, 5 car"
+1205,21252.jpg,city | cross | crosswalk | person | man | road | walk | woman,"2 person, 7 car, 1 bench"
+1206,21266.jpg,boy | child | cross | crosswalk | person | student | red | road | school | walk,"3 person, 6 car, 1 bench"
+1207,21280.jpg,child | couple | cross | crosswalk | person | man | red | road | walk | woman | zebra crossing,"4 person, 6 car, 1 backpack"
+1208,21294.jpg,cross | crosswalk | girl | person | pedestrian | road | walk | woman,"5 person, 10 car, 1 backpack, 1 skateboard"
+1209,21308.jpg,blue | cross | crosswalk | dress | person | man | pedestrian | red | road | walk | woman | zebra crossing,"4 person, 7 car, 1 backpack, 1 handbag"
+1210,21322.jpg,cross | crosswalk | person | jog | man | red | road | shirt | walk | woman,"1 person, 6 car, 1 handbag"
+1211,21336.jpg,cross | crosswalk | person | jog | man | red | road | shirt | walk | woman | zebra crossing,"1 person, 6 car, 2 handbag"
+1212,21350.jpg,city | cross | crosswalk | person | jog | man | road | shirt | walk,"1 person, 7 car"
+1213,21364.jpg,city | cross | crosswalk | person | intersection | jog | man | pedestrian | road | walk,"1 person, 5 car"
+1214,21378.jpg,city | city street | cross | crosswalk | person | intersection | jog | man | pedestrian | road | walk,"1 person, 7 car"
+1215,21392.jpg,biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | jog | man | ride | road | street sign | walk,"1 person, 6 car"
+1216,21406.jpg,car | city | city street | cross | crosswalk | person | intersection | man | road | street sign | traffic sign | walk,"1 person, 3 car"
+1217,21420.jpg,car | city | city street | cross | crosswalk | person | intersection | road | street sign | traffic sign | walk,"1 person, 3 car, 1 truck"
+1218,21434.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,"1 person, 5 car"
+1219,21448.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,8 car
+1220,21462.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,4 car
+1221,21476.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,4 car
+1222,21490.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,5 car
+1223,21504.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 6 car, 1 truck"
+1224,21518.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 5 car, 1 truck"
+1225,21532.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"4 car, 1 truck"
+1226,21546.jpg,city | city street | cross | crosswalk | person | intersection | man | ride | road,"1 person, 5 car, 1 truck"
+1227,21560.jpg,cart | cross | crosswalk | person | man | push | road | skateboarder | walk,"3 person, 3 car, 1 truck, 1 backpack, 3 skateboard"
+1228,21602.jpg,cross | crosswalk | person | man | pedestrian | road | walk | zebra crossing,"4 person, 3 car, 1 truck, 1 backpack"
+1229,21616.jpg,cross | crosswalk | person | man | pedestrian | road | skateboarder | walk | zebra crossing,"3 person, 3 car, 1 truck, 1 dog, 1 backpack"
+1230,21630.jpg,cross | crosswalk | person | man | road | skateboarder | walk | zebra crossing,"2 person, 2 car, 1 truck"
+1231,21644.jpg,baby carriage | cross | crosswalk | person | man | pedestrian | road | walk | woman | zebra crossing,"6 person, 3 car, 1 truck"
+1232,21658.jpg,cross | crosswalk | person | man | pedestrian | road | walk,"4 person, 3 car"
+1233,21672.jpg,bicycle | biker | bike lane | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road,"4 person, 4 car, 1 truck"
+1234,21686.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | walk,"4 person, 3 car"
+1235,21700.jpg,biker | car | city | city street | cross | crosswalk | person | intersection | pedestrian | ride | road | walk,"4 person, 4 car"
+1236,21714.jpg,car | city | city street | cross | crosswalk | person | intersection | man | pedestrian | ride | road | street sign | walk,"2 person, 4 car"
+1237,21728.jpg,car | city | city street | construction worker | cross | crosswalk | person | intersection | man | road | street sign | walk,"3 person, 4 car"
+1238,21742.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 person, 4 car"
+1239,21756.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"2 person, 4 car"
+1240,21770.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,2 car
+1241,21784.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,4 car
+1242,21798.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,4 car
+1243,21812.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,3 car
+1244,21826.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,4 car
+1245,21840.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,"1 person, 2 car"
+1246,21854.jpg,building | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,5 car
+1247,21868.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,4 car
+1248,21882.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,5 car
+1249,21896.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,6 car
+1250,21980.jpg,bus | city | city bus | city street | crosswalk | curb | drive | intersection | road | tour bus | travel | white,1 bus
+1251,21994.jpg,bus | bus stop | city bus | crosswalk | curb | drive | intersection | road | tour bus | travel | white,"1 car, 1 bus"
+1252,22050.jpg,bus | car | city | city bus | city street | crosswalk | drive | intersection | road | street sign | travel | white,"3 car, 1 truck"
+1253,22064.jpg,bus | car | city | city bus | city street | crosswalk | drive | intersection | road | travel | white,"4 car, 1 bus, 1 truck"
+1254,22078.jpg,bus | car | city | city bus | city street | crosswalk | drive | intersection | road | street sign | travel | white,"4 car, 1 bus, 1 truck"
+1255,22092.jpg,bus | car | city | city bus | city street | cross | crosswalk | drive | intersection | road | travel,"6 car, 1 bus"
+1256,22106.jpg,car | city street | cross | crosswalk | drive | intersection | license plate | road | sedan | silver | suv | vehicle,"3 car, 1 bus, 1 truck"
+1257,22120.jpg,black | car | city street | cross | crosswalk | drive | intersection | road | traffic light,"6 car, 1 truck"
+1258,22134.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | traffic light | street sign | traffic sign,"5 car, 1 bus, 1 truck"
+1259,22148.jpg,car | city | city street | crosswalk | drive | intersection | road | street sign | traffic sign,"4 car, 1 truck"
+1260,22162.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,7 car
+1261,22176.jpg,car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,"4 car, 1 truck"
+1262,22190.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"5 car, 1 truck"
+1263,22204.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"6 car, 1 truck, 1 bench"
+1264,22218.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1265,22232.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1266,22246.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1267,22260.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"7 car, 1 truck"
+1268,22274.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"6 car, 1 truck"
+1269,22288.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"8 car, 1 truck"
+1270,22302.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"7 car, 1 truck"
+1271,22316.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"5 car, 1 truck"
+1272,22330.jpg,car | city | city street | crosswalk | drive | intersection | road | street sign | traffic sign,"7 car, 1 truck"
+1273,22372.jpg,car | city | city street | crosswalk | drive | intersection | road | traffic light | street sign,"4 car, 1 truck"
+1274,22386.jpg,car | city | city street | crosswalk | drive | intersection | road | traffic light | street corner | street sign,"4 car, 1 truck"
+1275,22400.jpg,car | city | city street | crosswalk | drive | intersection | road | traffic light | street corner | street sign | traffic sign,"4 car, 1 truck"
+1276,22414.jpg,car | city | city street | crosswalk | drive | intersection | motorcycle | road | street corner | street sign | traffic sign,"5 car, 2 truck"
+1277,22442.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 car, 1 truck"
+1278,22456.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"6 car, 1 truck"
+1279,22470.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"4 car, 1 truck"
+1280,22484.jpg,building | car | city | city street | crosswalk | intersection | office building | road | traffic light | street corner | street sign | traffic sign,"3 car, 1 truck"
+1281,22554.jpg,car | city | city street | crosswalk | drive | intersection | road | traffic light | street corner | street sign | traffic sign,"5 car, 1 truck"
+1282,22568.jpg,building | car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,"5 car, 1 truck"
+1283,22582.jpg,building | car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,"5 car, 1 truck"
+1284,22596.jpg,building | car | city | city street | crosswalk | drive | intersection | road | street corner | street sign | traffic sign,"7 car, 1 truck"
+1285,22610.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"4 car, 1 truck"
+1286,22624.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"7 car, 1 truck"
+1287,22638.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"8 car, 1 truck"
+1288,22652.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"7 car, 1 truck"
+1289,22666.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"6 car, 1 truck"
+1290,22680.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"5 car, 1 truck"
+1291,22694.jpg,car | city | city street | cross | crosswalk | drive | intersection | road | street sign | traffic sign,"6 car, 1 truck"
+1292,22708.jpg,black | car | city street | cross | crosswalk | drive | intersection | road | sedan | suv | vehicle,"6 car, 1 truck"
+1293,22722.jpg,car | city street | cross | crosswalk | drive | intersection | road | street sign | traffic sign,"5 car, 1 truck"
+1294,22736.jpg,car | city | city street | crosswalk | drive | intersection | road | street sign | traffic sign,"5 car, 1 truck"
+1295,22750.jpg,car | city | city street | crosswalk | drive | intersection | road | traffic light | street corner | street sign | traffic sign,"6 car, 1 truck"
+1296,22764.jpg,car | city | city street | crosswalk | drive | intersection | road | traffic light | street corner | street sign | traffic sign,"6 car, 1 truck"
+1297,22778.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"7 car, 1 truck"
+1298,22792.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"7 car, 1 truck"
+1299,22806.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"7 car, 1 truck"
+1300,22988.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+1301,23002.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+1302,23016.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,2 car
+1303,23030.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign,1 car
+1304,23044.jpg,car | city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+1305,23058.jpg,city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,1 car
+1306,23072.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,1 car
+1307,23128.jpg,city | city street | construction worker | crosswalk | direct | fire truck | intersection | road | street corner | street sign,"1 car, 1 truck"
+1308,23142.jpg,car | city | city street | crosswalk | fire truck | intersection | road | street corner | street sign,"2 car, 1 truck"
+1309,23156.jpg,car | city | city street | crosswalk | fire truck | intersection | road,"3 car, 1 truck"
+1310,23170.jpg,car | city | city street | crosswalk | fire truck | intersection | road | street corner | street sign,"1 person, 2 car, 1 truck, 1 bench"
+1311,23184.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 car, 1 truck"
+1312,23198.jpg,car | city | city street | crosswalk | fire truck | intersection | road | street corner | street sign,"2 car, 1 truck"
+1313,23212.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"3 car, 1 truck"
+1314,23226.jpg,city | city street | crosswalk | intersection | road | street sign,"1 person, 3 car, 1 truck"
+1315,23240.jpg,city | city street | cross | crosswalk | person | intersection | man | road,"3 person, 4 car, 1 truck"
+1316,23254.jpg,car | city | city street | cross | crosswalk | person | intersection | road,"6 person, 2 car"
+1317,23268.jpg,biker | city | city street | cross | crosswalk | person | intersection | ride | road | walk,"5 person, 3 car"
+1318,23282.jpg,biker | city | city street | cross | crosswalk | person | intersection | jog | man | pedestrian | ride | road | walk,"4 person, 2 car, 1 truck"
+1319,23296.jpg,cross | crosswalk | person | jog | man | pedestrian | road | walk,"4 person, 4 car, 1 truck"
+1320,23310.jpg,city | cross | crosswalk | person | jog | man | pedestrian | road | walk,"5 person, 2 car, 1 truck"
+1321,23324.jpg,cross | crosswalk | person | jog | man | marathon | road | walk | woman | zebra crossing,"5 person, 2 car, 1 truck, 1 skateboard"
+1322,23338.jpg,cross | crosswalk | person | jog | man | marathon | road | walk | woman,"4 person, 2 car, 1 skateboard"
+1323,23520.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car, 1 truck"
+1324,23534.jpg,city | city street | construction worker | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 7 car"
+1325,23548.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car, 1 truck"
+1326,23562.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"4 car, 1 truck"
+1327,23576.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"5 car, 1 truck"
+1328,23590.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"4 car, 1 truck"
+1329,23604.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 3 car"
+1330,23618.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 person, 2 car"
+1331,23632.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+1332,23646.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1333,23660.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"6 car, 1 truck"
+1334,23674.jpg,car | city | city street | crosswalk | fire truck | intersection | road | street corner | street sign | traffic sign,4 car
+1335,23688.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1336,23702.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+1337,23716.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,5 car
+1338,23730.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,6 car
+1339,23744.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,5 car
+1340,23772.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1341,23786.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1342,23800.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+1343,23814.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+1344,23884.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"5 car, 1 truck"
+1345,23898.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1346,23912.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1347,23926.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+1348,23940.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+1349,23954.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1350,23968.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,4 car
+1351,23982.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,5 car
+1352,23996.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1353,24010.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1354,24024.jpg,city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,5 car
+1355,24038.jpg,building | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1356,24052.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1357,24066.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1358,24080.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1359,24094.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,3 car
+1360,24108.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+1361,24122.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,3 car
+1362,24374.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,4 car
+1363,24388.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,4 car
+1364,24402.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,3 car
+1365,24416.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 car, 2 truck"
+1366,24430.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"3 car, 1 truck"
+1367,24444.jpg,city | city street | crosswalk | intersection | road | street corner | street sign,"1 car, 1 truck"
+1368,24458.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"1 car, 1 truck"
+1369,24472.jpg,city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,"1 car, 1 truck"
+1370,24486.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,3 car
+1371,24500.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,3 car
+1372,24514.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,4 car
+1373,24528.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1374,24542.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,"1 person, 4 car"
+1375,24556.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign,5 car
+1376,24570.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign,6 car
+1377,24584.jpg,black | car | city | city street | cross | crosswalk | drive | intersection | road,4 car
+1378,24598.jpg,black | car | city street | cross | crosswalk | drive | intersection | road,8 car
+1379,24612.jpg,black | car | city | city street | cross | crosswalk | drive | intersection | road,5 car
+1380,24626.jpg,car | city | city street | crosswalk | drive | intersection | road | traffic light | street corner | street sign,5 car
+1381,24836.jpg,building | car | city | city street | crosswalk | intersection | office building | road | traffic light | street corner | street sign | traffic sign,7 car
+1382,24850.jpg,building | car | city | city street | crosswalk | intersection | office building | road | traffic light | street corner | street sign | traffic sign,9 car
+1383,24864.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,8 car
+1384,24878.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,"1 person, 6 car"
+1385,24892.jpg,building | car | city | city street | crosswalk | intersection | office building | road | traffic light | street corner | street sign | traffic sign,5 car
+1386,24906.jpg,building | car | city | city street | crosswalk | intersection | office building | road | traffic light | street corner | street sign | traffic sign,4 car
+1387,24920.jpg,car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,4 car
+1388,24934.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,4 car
+1389,24948.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1390,24962.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,5 car
+1391,24976.jpg,car | city | city street | cross | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,10 car
+1392,24990.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1393,25004.jpg,building | car | city | city street | crosswalk | intersection | office building | road | traffic light | street corner | street sign | traffic sign,5 car
+1394,25018.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,6 car
+1395,25032.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1396,25046.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,5 car
+1397,25060.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,7 car
+1398,25074.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,5 car
+1399,25088.jpg,building | car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1400,25102.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,4 car
+1401,25116.jpg,building | car | city | city street | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,10 car
+1402,25200.jpg,building | car | city | city street | crosswalk | intersection | office building | road | traffic light | street corner | street sign | traffic sign,6 car
+1403,25214.jpg,car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign,4 car
+1404,25228.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign,6 car
+1405,25242.jpg,car | city | city street | cross | crosswalk | intersection | road | street corner | street sign,"5 car, 1 surfboard"
+1406,25256.jpg,building | car | city | city street | cross | crosswalk | intersection | road | traffic light | street corner | street sign | traffic sign,4 car
+1407,25270.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1408,25284.jpg,car | city | city street | crosswalk | intersection | road | street corner | street sign | traffic sign,6 car
+1409,25298.jpg,building | car | city | city street | crosswalk | intersection | office building | road | street corner | street sign | traffic sign,"1 person, 5 car"
