@@ -10,11 +10,19 @@ const options = [
 	},
 	{
 		
-    	dataset: "CIFAR-10 Jin",
-    	model: "ResNet50 Jin",
-    	cluster_filepath: "cifar10/clusters/cifar10_test.json",
+    	dataset: "CIFAR-10 test",
+    	model: "ResNet50 test",
+    	cluster_filepath: "cifar10-test/clusters/cifar10-test.json",
         // class_cluster_filepath removed since we don't have class labels
-    	image_filepath: "cifar10/images",
+    	image_filepath: "cifar10-test/images",
+	},
+    {
+		
+    	dataset: "Dumbo",
+    	model: "ResNet50 Dumbo",
+    	cluster_filepath: "dumbo/clusters/dumbo_clusters.json",
+        // class_cluster_filepath removed since we don't have class labels
+    	image_filepath: "dumbo/images",
 	},
 	{
 		dataset: "CIFAR-100",
