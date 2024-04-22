@@ -3,6 +3,7 @@ import pandas as pd
 import networkx as nx
 import plotly.graph_objects as go
 from process import process_data
+import plotly.express as px
 
 # Define human actions
 human_actions = ['drive','ride','cross','walk','pick up','stand','carry','catch','jog','spray','push','skate','wash','travel',
@@ -83,8 +84,29 @@ def plot_network(graph, title):
                     )
 
     # Adjust the size of the graph
-    fig.update_layout(width=1200, height=900)
-
-
+    fig.update_layout(width=1000, height=700)
     fig.show()
+    
+    return fig
+
+def plot_tag_counts_by_location(df, location):
+    # Filter the data by the specified location
+    df_filtered = df[df['location'] == location]
+    
+    # Get the filtered words
+    filtered_words = ' | '.join(df_filtered['RAM_Tags']).split('|')
+    filtered_words = [word.strip().lower() for word in filtered_words]
+    
+    # Count the occurrences of each word
+    filtered_word_counts = pd.Series(filtered_words).value_counts()
+    
+    # Exclude words that occur too frequently in df
+    threshold = 0.75 * len(df_filtered)
+    filtered_word_counts = filtered_word_counts[filtered_word_counts <= threshold]
+    #top_10_tags = filtered_word_counts.nlargest(10)
+    
+    fig = px.bar(filtered_word_counts, x=filtered_word_counts.index, y=filtered_word_counts.values)
+    fig.update_layout(title=f'Tag Counts for Location: {location}', xaxis_title='Tag', yaxis_title='Count')
+    fig.update_xaxes(tickangle=45)
+
     return fig
