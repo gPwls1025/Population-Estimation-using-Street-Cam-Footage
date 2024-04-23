@@ -1,6 +1,7 @@
 import pandas as pd
 import plotly.graph_objects as go
 import networkx as nx
+import json
 from dash import Dash, html, dcc, callback, Input, Output
 from plotly.graph_objects import Figure
 
@@ -15,6 +16,7 @@ def get_counts_df(df):
     word_counts_df.columns = ['Tag', 'RAM_Count']
     return word_counts_df
 
+
 def update_co_occurrence(df, co_occurrence_matrix):
     for _, row in df.iterrows():
         tags = row['RAM_Tags'].split(' | ')
@@ -22,26 +24,6 @@ def update_co_occurrence(df, co_occurrence_matrix):
             for j in range(i+1, len(tags)):
                 co_occurrence_matrix.at[tags[i], tags[j]] += 1
                 co_occurrence_matrix.at[tags[j], tags[i]] += 1
-
-def create_gender_df(df):
-    df['man'] = df['RAM_Tags'].str.contains(r'\bman\b|\bboy\b', case=False, regex=True).astype(int)
-    df['woman'] = df['RAM_Tags'].str.contains(r'\bwoman\b|\bgirl\b', case=False, regex=True).astype(int)
-    man_df = df[(df['man'] == 1) & (df['woman']==0)]
-    woman_df = df[(df['man'] == 0) & (df['woman']==1)]
-    return man_df, woman_df
-
-def create_location_filtered_word_counts_df(df, location_id):
-    filtered_df = df[df['locationID'] == location_id]
-    word_counts_df = get_counts_df(filtered_df)
-    word_counts_df_filtered = word_counts_df[~((word_counts_df['RAM_Count'] > 0.75 * len(filtered_df)) | (word_counts_df['RAM_Count'] <= 4))]
-    normalized_counts = pd.DataFrame({'Tag': word_counts_df_filtered['Tag'], 'RAM_Count': word_counts_df_filtered['RAM_Count'] / len(filtered_df)})
-    return word_counts_df_filtered, normalized_counts
-
-def create_gender_filtered_word_counts_df(df):
-    word_counts_df = get_counts_df(df)
-    word_counts_df_filtered = word_counts_df[~((word_counts_df['RAM_Count'] <= 4))]
-    normalized_counts = pd.DataFrame({'Tag': word_counts_df_filtered['Tag'], 'RAM_Count': word_counts_df_filtered['RAM_Count'] / len(df)})
-    return normalized_counts
 
 
 def get_co_occurrence(df):
@@ -54,6 +36,15 @@ def get_co_occurrence(df):
     co_occurrence_matrix = pd.DataFrame(index=all_tags, columns=all_tags).fillna(0)
     update_co_occurrence(df, co_occurrence_matrix)
     return co_occurrence_matrix
+
+
+def create_location_filtered_word_counts_df(df, location_id):
+    filtered_df = df[df['locationID'] == location_id]
+    word_counts_df = get_counts_df(filtered_df)
+    word_counts_df_filtered = word_counts_df[~((word_counts_df['RAM_Count'] > 0.75 * len(filtered_df)) | (word_counts_df['RAM_Count'] <= 4))]
+    normalized_counts = pd.DataFrame({'Tag': word_counts_df_filtered['Tag'], 'RAM_Count': word_counts_df_filtered['RAM_Count'] / len(filtered_df)})
+    return word_counts_df_filtered, normalized_counts
+
 
 def create_individual_location_data(df):
     # Call the function for each locationID
@@ -77,6 +68,22 @@ def create_aggregated_data(words_count_1, words_count_2, words_count_3):
     grouped_df_location = merged_df_location.groupby('Tag')['RAM_Count'].sum().reset_index()
 
     return grouped_df_location
+
+
+def create_gender_df(df):
+    df['man'] = df['RAM_Tags'].str.contains(r'\bman\b|\bboy\b', case=False, regex=True).astype(int)
+    df['woman'] = df['RAM_Tags'].str.contains(r'\bwoman\b|\bgirl\b', case=False, regex=True).astype(int)
+    man_df = df[(df['man'] == 1) & (df['woman']==0)]
+    woman_df = df[(df['man'] == 0) & (df['woman']==1)]
+    return man_df, woman_df
+
+
+def create_gender_filtered_word_counts_df(df):
+    word_counts_df = get_counts_df(df)
+    word_counts_df_filtered = word_counts_df[~((word_counts_df['RAM_Count'] <= 4))]
+    normalized_counts = pd.DataFrame({'Tag': word_counts_df_filtered['Tag'], 'RAM_Count': word_counts_df_filtered['RAM_Count'] / len(df)})
+    return normalized_counts
+
 
 def create_gender_data(df):    
     #Call the function for the genders
@@ -109,6 +116,7 @@ def create_graph_from_co_occurrence(co_occurrence_matrix, word_counts_df):
         if len(word_count) > 0:
             G.nodes[node]['size'] = word_count[0]  # Taking the word count from word_counts_df
     return G
+
 
 def plot_network(graph):
     pos = nx.spring_layout(graph, seed=42)  # Layout for better visualization
@@ -144,6 +152,17 @@ def plot_network(graph):
     return fig
 
 
+def location_based_graph(df, location):
+    df_location = df[df['location'] == location]
+    co_occurrence_overall = get_co_occurrence(df_location)
+    words_count_1, words_cps_1, words_count_2, words_cps_2, words_count_3, words_cps_3 = create_individual_location_data(df)
+    words_count_1_location, a, words_count_2_location, b, words_count_3_location, c = create_individual_location_data(df_location)    
+    word_counts_df_overall = create_aggregated_data(words_count_1_location, words_count_2_location, words_count_3_location)
+    words_cps_m, words_cps_f = create_gender_data(df_location)
+    graph = create_graph_from_co_occurrence(co_occurrence_overall, word_counts_df_overall)
+    return graph, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f
+
+
 def get_tag_data_without_label(tag, *dfs):
     # Get data for a specific tag from multiple DataFrames, excluding 'Tag' label
     data = {}
@@ -164,10 +183,11 @@ co_occurrence_overall = get_co_occurrence(df)
 words_count_1, words_cps_1, words_count_2, words_cps_2, words_count_3, words_cps_3 = create_individual_location_data(df)
 word_counts_df_overall = create_aggregated_data(words_count_1, words_count_2, words_count_3)
 words_cps_m, words_cps_f = create_gender_data(df)
-
-# Create the co-occurrence graph
 graph = create_graph_from_co_occurrence(co_occurrence_overall, word_counts_df_overall)
 
+#graph, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df, 'park')
+#graph, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df, 'chase')
+#graph, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df, 'dumbo')
 
 
 #Create Dash app
