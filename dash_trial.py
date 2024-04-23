@@ -42,8 +42,8 @@ app.layout = html.Div([
     [Input('location-dropdown', 'value')]
 )
 def update_network_graph(selected_location):
-    if selected_location == 'All Locations':
-        filtered_data = word_counts_df_filtered
+    # if selected_location == 'All Locations':
+    filtered_data = word_counts_df_filtered
     # else:
     #     filtered_data = word_counts_df_filtered[word_counts_df_filtered['location'] == selected_location]
     
