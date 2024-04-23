@@ -4,9 +4,16 @@ import networkx as nx
 from dash import Dash, html, dcc, callback, Input, Output
 from plotly.graph_objects import Figure
 
-# Assuming these are functions from your earlier code snippet
-# - create_graph_from_co_occurrence
-# - plot_network
+
+def get_counts_df(df):
+    text = ' | '.join(df['RAM_Tags'])
+    words = text.split('|')
+    words = [word.strip().lower() for word in words]
+    word_counts = pd.Series(words).value_counts()
+    word_counts_df = pd.DataFrame(word_counts)
+    word_counts_df.reset_index(inplace=True)
+    word_counts_df.columns = ['Tag', 'RAM_Count']
+    return word_counts_df
 
 def update_co_occurrence(df, co_occurrence_matrix):
     for _, row in df.iterrows():
@@ -16,38 +23,28 @@ def update_co_occurrence(df, co_occurrence_matrix):
                 co_occurrence_matrix.at[tags[i], tags[j]] += 1
                 co_occurrence_matrix.at[tags[j], tags[i]] += 1
 
+def create_gender_df(df):
+    df['man'] = df['RAM_Tags'].str.contains(r'\bman\b|\bboy\b', case=False, regex=True).astype(int)
+    df['woman'] = df['RAM_Tags'].str.contains(r'\bwoman\b|\bgirl\b', case=False, regex=True).astype(int)
+    man_df = df[(df['man'] == 1) & (df['woman']==0)]
+    woman_df = df[(df['man'] == 0) & (df['woman']==1)]
+    return man_df, woman_df
 
-def create_filtered_word_counts_df(df, location_id):
+def create_location_filtered_word_counts_df(df, location_id):
     filtered_df = df[df['locationID'] == location_id]
-    text = ' | '.join(filtered_df['RAM_Tags'])
-    words = text.split('|')
-    words = [word.strip().lower() for word in words]
-    word_counts = pd.Series(words).value_counts()
-    
-    word_counts_df = pd.DataFrame(word_counts)
-    word_counts_df.reset_index(inplace=True)
-    word_counts_df.columns = ['Tag', 'RAM_Count']
+    word_counts_df = get_counts_df(filtered_df)
     word_counts_df_filtered = word_counts_df[~((word_counts_df['RAM_Count'] > 0.75 * len(filtered_df)) | (word_counts_df['RAM_Count'] <= 4))]
-    
-    # Calculate normalized counts
     normalized_counts = pd.DataFrame({'Tag': word_counts_df_filtered['Tag'], 'RAM_Count': word_counts_df_filtered['RAM_Count'] / len(filtered_df)})
-    
     return word_counts_df_filtered, normalized_counts
 
+def create_gender_filtered_word_counts_df(df):
+    word_counts_df = get_counts_df(df)
+    word_counts_df_filtered = word_counts_df[~((word_counts_df['RAM_Count'] <= 4))]
+    normalized_counts = pd.DataFrame({'Tag': word_counts_df_filtered['Tag'], 'RAM_Count': word_counts_df_filtered['RAM_Count'] / len(df)})
+    return normalized_counts
 
-def get_word_counts_and_co_occurrence(df):
-    text = ' | '.join(df['RAM_Tags'])
-    words = text.split('|')
-    words = [word.strip().lower() for word in words]
 
-    # Count the occurrences of each word
-    word_counts = pd.Series(words).value_counts()
-
-    #Make a df for storage
-    word_counts_df = pd.DataFrame(word_counts)
-    word_counts_df.reset_index(inplace=True)
-    word_counts_df.columns = ['Tag','RAM_Count']
-
+def get_co_occurrence(df):
     all_tags = set()
     for tags in df['RAM_Tags']:
         all_tags.update(tags.split(' | '))
@@ -57,24 +54,26 @@ def get_word_counts_and_co_occurrence(df):
     co_occurrence_overall = pd.DataFrame(index=all_tags, columns=all_tags).fillna(0)
 
     # Updating co-occurrence matrices
-    update_co_occurrence(df, co_occurrence_overall) #This makes the co-occurence matrix
+    update_co_occurrence(df, co_occurrence_overall)
 
-    #word_counts_df_filtered = word_counts_df[~((word_counts_df['RAM_Count']>0.75*len(df)) | (word_counts_df['RAM_Count'] <= 4))]
-
-    # Assuming df is your DataFrame
     # Call the function for each locationID
-    words_count_1, words_cps_1 = create_filtered_word_counts_df(df, 1)
-    words_count_2, words_cps_2 = create_filtered_word_counts_df(df, 2)
-    words_count_3, words_cps_3 = create_filtered_word_counts_df(df, 3)
+    words_count_1, words_cps_1 = create_location_filtered_word_counts_df(df, 1)
+    words_count_2, words_cps_2 = create_location_filtered_word_counts_df(df, 2)
+    words_count_3, words_cps_3 = create_location_filtered_word_counts_df(df, 3)
 
+    #Merge the dataframes
     words_count_1['RAM_Count'] *= (1/3)
     words_count_2['RAM_Count'] *= (1/3)
     words_count_3['RAM_Count'] *= (1/3)
-
     merged_df_location = pd.concat([words_count_1, words_count_2, words_count_3], ignore_index=True)
     grouped_df_location = merged_df_location.groupby('Tag')['RAM_Count'].sum().reset_index()
 
-    return grouped_df_location, co_occurrence_overall, words_cps_1, words_cps_2, words_cps_3
+    #Call the function for the genders
+    man_df, woman_df = create_gender_df(df)
+    words_cps_m = create_gender_filtered_word_counts_df(man_df)
+    words_cps_f = create_gender_filtered_word_counts_df(woman_df)
+
+    return grouped_df_location, co_occurrence_overall, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f
 
 
 
@@ -132,16 +131,6 @@ def plot_network(graph):
                     )
     return fig
 
-'''
-def get_tag_data(tag, *dfs):
-    data = {'Tag': tag}
-    for df in dfs:
-        if tag in df['Tag'].values:
-            data[df.name.capitalize()] = df.loc[df['Tag'] == tag, 'RAM_Count'].values[0]
-        else:
-            data[df.name.capitalize()] = 0
-    return data
-'''
 
 def get_tag_data_without_label(tag, *dfs):
     # Get data for a specific tag from multiple DataFrames, excluding 'Tag' label
@@ -159,39 +148,26 @@ df = pd.read_csv('YOLO+RAM_merged.csv')
 df.drop(columns=['Unnamed: 0'], inplace=True)
 
 # Create a co-occurrence matrix and word counts
-word_counts_df_filtered, co_occurrence_overall, words_cps_1, words_cps_2, words_cps_3 = get_word_counts_and_co_occurrence(df)
+word_counts_df_filtered, co_occurrence_overall, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = get_co_occurrence(df)
 
 words_cps_1.name = 'park'
 words_cps_2.name = 'chase'
 words_cps_3.name = 'dumbo'
 
+words_cps_m.name = 'man'
+words_cps_f.name = 'woman'
+
 # Create the co-occurrence graph
 graph = create_graph_from_co_occurrence(co_occurrence_overall, word_counts_df_filtered)
 
 
-'''
-# Create Dash app
+
+#Create Dash app
 app = Dash(__name__)
 
+# Layout with network graph and two bar charts
 app.layout = html.Div([
-    html.Div([
-        dcc.Graph(
-            id='network-graph',
-            figure=plot_network(graph)
-        )
-    ], style={'width': '100%', 'display': 'inline-block', 'padding': '0 20'})
-])
-
-if __name__ == '__main__':
-    app.run(debug=True)
-'''
-
-# Create Dash app
-app = Dash(__name__)
-
-# Layout with network graph and bar chart
-app.layout = html.Div([
-    html.H1("Interactive Network Graph with Hover-based Bar Chart"),
+    html.H1("Interactive Network Graph with Multiple Hover-based Bar Charts"),
     html.Div([
         dcc.Graph(
             id='network-graph',
@@ -201,38 +177,55 @@ app.layout = html.Div([
     ], style={'width': '70%', 'display': 'inline-block'}),
 
     html.Div([
-        dcc.Graph(id='bar-graph')  # Placeholder for the bar chart
+        dcc.Graph(id='bar-graph-1'),  # Placeholder for the first bar chart
+        dcc.Graph(id='bar-graph-2')  # Placeholder for the second bar chart
     ], style={'width': '30%', 'display': 'inline-block'})
 ])
 
-# Callback to update the bar chart based on hover data from the network graph
+# Callback to update both bar charts based on hover data from the network graph
 @callback(
-    Output('bar-graph', 'figure'),
+    [Output('bar-graph-1', 'figure'), Output('bar-graph-2', 'figure')],
     [Input('network-graph', 'hoverData')]
 )
-
-def update_bar_chart(hover_data):
+def update_bar_charts(hover_data):
     tag = hover_data['points'][0]['text'].split("<br>")[0].replace("Node: ", "").strip("['") if hover_data and 'points' in hover_data else None
     
     if tag:
-        # Get data for the tag
-        tag_data = get_tag_data_without_label(tag, words_cps_1, words_cps_2, words_cps_3)
-
-        # Create the bar plot with Plotly
-        bar_fig = go.Figure(
+        # Get data for the first bar chart
+        tag_data_location = get_tag_data_without_label(tag, words_cps_1, words_cps_2, words_cps_3)
+        
+        # Generate the first bar chart
+        bar_fig_1 = go.Figure(
             data=[
-                go.Bar(x=list(tag_data.keys()), y=list(tag_data.values()), marker=dict(color=['red', 'green', 'blue']))
+                go.Bar(x=list(tag_data_location.keys()), y=list(tag_data_location.values()), marker=dict(color=['red', 'green', 'black']))
             ],
             layout=go.Layout(
                 title=f'RAM Count for Tag: {tag}',
                 xaxis=dict(title='Location'),
-                yaxis=dict(title='RAM Count'),
+                yaxis=dict(title='Count per Second'),
                 showlegend=False
             )
         )
-        return bar_fig
+
+        # Generate the second bar chart (assuming you have another data source)
+        tag_data_gender = get_tag_data_without_label(tag, words_cps_m, words_cps_f)
+        
+        bar_fig_2 = go.Figure(
+            data=[
+                go.Bar(x=list(tag_data_gender.keys()), y=list(tag_data_gender.values()), marker=dict(color=['blue', 'pink']))
+            ],
+            layout=go.Layout(
+                title=f'RAM Count for Tag: {tag}',
+                xaxis=dict(title='Gender'),
+                yaxis=dict(title='Count per Second'),
+                showlegend=False
+            )
+        )
+        
+
+        return [bar_fig_1, bar_fig_2]
     else:
-        return go.Figure()  # Empty figure if no tag is hovered over
+        return [go.Figure(), go.Figure()]  # Empty figures if no tag is hovered over
 
 if __name__ == '__main__':
     app.run(debug=True)
