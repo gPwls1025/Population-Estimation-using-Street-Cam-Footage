@@ -51,16 +51,24 @@ def get_co_occurrence(df):
     all_tags = sorted(list(all_tags))
 
     # Creating co-occurrence matrices
-    co_occurrence_overall = pd.DataFrame(index=all_tags, columns=all_tags).fillna(0)
+    co_occurrence_matrix = pd.DataFrame(index=all_tags, columns=all_tags).fillna(0)
+    update_co_occurrence(df, co_occurrence_matrix)
+    return co_occurrence_matrix
 
-    # Updating co-occurrence matrices
-    update_co_occurrence(df, co_occurrence_overall)
-
+def create_individual_location_data(df):
     # Call the function for each locationID
     words_count_1, words_cps_1 = create_location_filtered_word_counts_df(df, 1)
     words_count_2, words_cps_2 = create_location_filtered_word_counts_df(df, 2)
     words_count_3, words_cps_3 = create_location_filtered_word_counts_df(df, 3)
 
+    words_cps_1.name = 'park'
+    words_cps_2.name = 'chase'
+    words_cps_3.name = 'dumbo'
+
+    return words_count_1, words_cps_1, words_count_2, words_cps_2, words_count_3, words_cps_3
+
+
+def create_aggregated_data(words_count_1, words_count_2, words_count_3):
     #Merge the dataframes
     words_count_1['RAM_Count'] *= (1/3)
     words_count_2['RAM_Count'] *= (1/3)
@@ -68,13 +76,18 @@ def get_co_occurrence(df):
     merged_df_location = pd.concat([words_count_1, words_count_2, words_count_3], ignore_index=True)
     grouped_df_location = merged_df_location.groupby('Tag')['RAM_Count'].sum().reset_index()
 
+    return grouped_df_location
+
+def create_gender_data(df):    
     #Call the function for the genders
     man_df, woman_df = create_gender_df(df)
     words_cps_m = create_gender_filtered_word_counts_df(man_df)
     words_cps_f = create_gender_filtered_word_counts_df(woman_df)
+    
+    words_cps_m.name = 'man'
+    words_cps_f.name = 'woman'
 
-    return grouped_df_location, co_occurrence_overall, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f
-
+    return words_cps_m, words_cps_f
 
 
 def create_graph_from_co_occurrence(co_occurrence_matrix, word_counts_df):
@@ -97,7 +110,6 @@ def create_graph_from_co_occurrence(co_occurrence_matrix, word_counts_df):
             G.nodes[node]['size'] = word_count[0]  # Taking the word count from word_counts_df
     return G
 
-# Creating a Plotly figure
 def plot_network(graph):
     pos = nx.spring_layout(graph, seed=42)  # Layout for better visualization
 
@@ -148,17 +160,13 @@ df = pd.read_csv('YOLO+RAM_merged.csv')
 df.drop(columns=['Unnamed: 0'], inplace=True)
 
 # Create a co-occurrence matrix and word counts
-word_counts_df_filtered, co_occurrence_overall, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = get_co_occurrence(df)
-
-words_cps_1.name = 'park'
-words_cps_2.name = 'chase'
-words_cps_3.name = 'dumbo'
-
-words_cps_m.name = 'man'
-words_cps_f.name = 'woman'
+co_occurrence_overall = get_co_occurrence(df)
+words_count_1, words_cps_1, words_count_2, words_cps_2, words_count_3, words_cps_3 = create_individual_location_data(df)
+word_counts_df_overall = create_aggregated_data(words_count_1, words_count_2, words_count_3)
+words_cps_m, words_cps_f = create_gender_data(df)
 
 # Create the co-occurrence graph
-graph = create_graph_from_co_occurrence(co_occurrence_overall, word_counts_df_filtered)
+graph = create_graph_from_co_occurrence(co_occurrence_overall, word_counts_df_overall)
 
 
 
@@ -221,7 +229,6 @@ def update_bar_charts(hover_data):
                 showlegend=False
             )
         )
-        
 
         return [bar_fig_1, bar_fig_2]
     else:
