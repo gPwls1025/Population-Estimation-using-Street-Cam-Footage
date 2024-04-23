@@ -97,6 +97,53 @@ def create_gender_data(df):
     return words_cps_m, words_cps_f
 
 
+def category_mapping(df):
+    category_mapping = {'street corner': 'Urban Infrastructure','car': 'Vehicle','intersection': 'Urban Infrastructure',
+                        'city street': 'Urban Infrastructure', 'cross': 'HAR', 'person': 'People', 'walk': 'HAR', 'pavement': 'Urban Infrastructure', 
+                        'man': 'People', 'curb': 'Urban Infrastructure', 'crack': 'Urban Infrastructure', 'drain': 'Urban Infrastructure', 
+                        'pedestrian': 'People', 'woman': 'People', 'manhole cover': 'Urban Infrastructure', 'drive': 'HAR', 
+                        'manhole': 'Urban Infrastructure', 'street sign': 'Urban Infrastructure', 'city': 'Urban Infrastructure', 
+                        'building': 'Urban Infrastructure', 'suv': 'Vehicle', 'ride': 'HAR', 'park': 'Vehicle', 'sedan': 'Vehicle', 
+                        'zebra crossing': 'Urban Infrastructure', 'white': 'Color', 'sea': 'Miscellaneous', 'traffic sign': 'Urban Infrastructure', 
+                        'stand': 'HAR', 'license plate': 'Vehicle', 'girl': 'People', 'skateboarder': 'People', 'biker': 'People', 
+                        'vehicle': 'Vehicle', 'scooter': 'Vehicle', 'bicycle': 'Vehicle', 'black': 'Color', 'jog': 'HAR', 
+                        'shirt': 'Clothing Accessory', 'spray': 'Personal Item', 'shopping bag': 'Personal Item', 
+                        'blue': 'Color', 'van': 'Vehicle', 'motorcycle': 'Vehicle', 'minivan': 'Vehicle', 'dress': 'Clothing Accessory', 
+                        'red': 'Color', 'bike lane': 'Urban Infrastructure', 'push': 'HAR', 'silver': 'Color', 'child': 'People', 
+                        'bus': 'Vehicle', 'motorbike': 'Vehicle', 'traffic light': 'Urban Infrastructure', 'boy': 'People', 'couple': 'People', 
+                        'motorcyclist': 'People', 'skate': 'HAR', 'skateboard': 'Personal Item', 'city bus': 'Vehicle', 'catch': 'HAR', 
+                        'bag': 'Personal Item', 'sign': 'Urban Infrastructure', 'moped': 'Vehicle', 'baby carriage': 'Personal Item', 
+                        'briefcase': 'Personal Item', 'carry': 'HAR', 'leash': 'Personal Item', 'puddle': 'Urban Infrastructure', 
+                        'construction worker': 'People', 'chessboard': 'Personal Item', 'yellow': 'Color', 'truck': 'Vehicle', 
+                        'ambulance': 'Vehicle', 'cane': 'Personal Item', 'taxi': 'Vehicle', 'wash': 'HAR', 'green': 'Color', 
+                        'sandal': 'Clothing Accessory', 'pink': 'Color', 'office building': 'Urban Infrastructure', 'dog': 'Animal', 
+                        'umbrella': 'Personal Item', 'tour bus': 'Vehicle', 'hand': 'Body Part', 'hose': 'Personal Item', 
+                        'bicycle helmet': 'Personal Item', 'travel': 'HAR', 'phone': 'Personal Item', 'pick up': 'HAR', 
+                        'bus stop': 'Vehicle', 'pole': 'Urban Infrastructure', 'chess': 'Miscellaneous', 'short': 'Clothing Accessory', 
+                        'clean': 'HAR', 'cart': 'Personal Item', 'jeep': 'Vehicle', 'sports car': 'Vehicle', 'wear': 'Clothing Accessory', 
+                        'business suit': 'Clothing Accessory', 'police': 'People', 'school bus': 'Vehicle', 'baby': 'People', 'smartphone': 
+                        'Personal Item', 'officer': 'People', 'backpack': 'Personal Item', 'urban': 'Urban Infrastructure', 
+                        'tie': 'Clothing Accessory', 'marathon': 'HAR', 'crowded': 'Miscellaneous', 'legging': 'Clothing Accessory', 
+                        'take': 'HAR', 'trailer truck': 'Vehicle', 'paper bag': 'Personal Item', 'direct': 'HAR', 'khaki': 'Clothing Accessory', 
+                        'shoe': 'Clothing Accessory', 'jeans': 'Clothing Accessory', 'limo': 'Vehicle', 'jacket': 'Clothing Accessory', 
+                        'mobility scooter': 'Vehicle', 'broom': 'Personal Item', 'luggage': 'Personal Item', 'curve': 'Miscellaneous', 
+                        'stop light': 'Urban Infrastructure', 'baseball hat': 'Personal Item', 'doodle': 'HAR', 'run': 'HAR', 'blanket': 
+                        'Personal Item', 'head': 'Body Part', 'shirtless': 'Clothing Accessory', 'bulletin board': 'Personal Item', 
+                        'dress shirt': 'Clothing Accessory', 'fire truck': 'Vehicle', 'police car': 'Vehicle', 'swab': 'HAR', 
+                        'photo': 'HAR', 'purple': 'Color', 'pet': 'Animal', 'garbage truck': 'Vehicle', 'drag': 'HAR', 
+                        'roller skate': 'Personal Item', 'shopping cart': 'Personal Item', 'monocycle': 'Vehicle', 'sweatshirt': 'Clothing Accessory', 
+                        'protester': 'People', 'ponytail': 'Body Part', 'play': 'HAR', 'food truck': 'Vehicle', 'check': 'Miscellaneous', 
+                        'tricycle': 'Vehicle', 'tote bag': 'Personal Item', 'stool': 'Personal Item', 'flag': 'Personal Item', 
+                        'lollipop': 'Personal Item', 'segway': 'Vehicle', 'arm': 'Body Part', 'writing': 'HAR', 'tight': 'Miscellaneous', 
+                        'vespa': 'Vehicle', 'trick': 'Miscellaneous', 'stretch': 'HAR', 'pant': 'Clothing Accessory', 
+                        'grocery bag': 'Personal Item', 'floor': 'Miscellaneous', 'car seat': 'Vehicle', 'runner': 'People', 
+                        'crate': 'Personal Item', 'helmet': 'Personal Item', 'mower': 'Personal Item', 'skater': 'People', 
+                        'gray': 'Color', 'parking meter': 'Urban Infrastructure', 'baseball glove': 'Personal Item', 
+                        'jumpsuit': 'Clothing Accessory', 'box': 'Personal Item', 'cardboard box': 'Personal Item', 'package': 'Personal Item'}
+
+    df['Category'] = df['Tag'].map(category_mapping)
+    return df
+
 def create_graph_from_co_occurrence(co_occurrence_matrix, word_counts_df):
     G = nx.Graph()
     filtered_tags = set(word_counts_df['Tag'])  # Get only the tags present in word_counts_df_filtered
@@ -118,37 +165,68 @@ def create_graph_from_co_occurrence(co_occurrence_matrix, word_counts_df):
     return G
 
 
-def plot_network(graph):
+def plot_network(graph, word_counts_df):
+    # Define category-to-color mapping
+    category_to_color = {
+        'HAR': 'red', 'Vehicle': 'green', 'People': 'blue', 'Urban Infrastructure': 'black',
+        'Color': 'orange', 'Miscellaneous': 'brown', 'Clothing Accessory': 'pink', 
+        'Personal Item': 'purple', 'Animal': 'yellow', 'Body Part': 'cyan'
+    }
+
     pos = nx.spring_layout(graph, seed=42)  # Layout for better visualization
 
-    max_weight = max([graph.edges[edge]['weight'] for edge in graph.edges()]) if graph.edges() else 1
-
+    # Create edge traces for the graph with showlegend=False
     edge_trace = []
     for edge in graph.edges():
         x0, y0 = pos[edge[0]]
         x1, y1 = pos[edge[1]]
-        weight = graph.edges[edge]['weight']
-        edge_trace.append(go.Scatter(x=[x0, x1, None], y=[y0, y1, None], mode='lines', line=dict(width=0.01 * weight, color=f'rgb({int(128 * weight / max_weight)}, {int(128 * weight / max_weight)}, {int(128 * weight / max_weight)})')))  # Adjusting edge width and color
+        edge_trace.append(
+            go.Scatter(x=[x0, x1, None], y=[y0, y1, None], mode='lines', 
+                       line=dict(width=0.03, color='gray'), hoverinfo='none', showlegend=False)
+        )
 
-    node_trace = go.Scatter(x=[], y=[], mode='markers', text=[], marker=dict(size=[], color=[], colorscale='Viridis', opacity=0.7))
+    # Create the main node trace with showlegend=False
+    node_trace = go.Scatter(x=[], y=[], mode='markers', text=[], 
+                            marker=dict(size=[], color=[]), opacity=0.7, showlegend=False)
+    
+    # Add nodes to the trace with corresponding category-based color and size
     for node in graph.nodes():
         x, y = pos[node]
         node_trace['x'] += (x,)
         node_trace['y'] += (y,)
-        node_trace['marker']['size'] += (graph.nodes[node].get('size', 1) * 0.03,)  # Adjusting node size
+        
+        tag_category = word_counts_df.loc[word_counts_df['Tag'] == node, 'Category']
+        category = tag_category.values[0] if not tag_category.empty and not pd.isna(tag_category.values[0]) else 'Unknown'
+        
+        color = category_to_color.get(category, 'gray')
+        
+        node_trace['marker']['color'] += (color,)
+        node_trace['marker']['size'] += (graph.nodes[node].get('size', 1) * 0.03,)
+        
         connected_nodes = list(graph.neighbors(node))
-        top_connected_nodes = sorted(connected_nodes, key=lambda x: graph.edges[(node, x)]['weight'], reverse=True)[:20]  # Get top 20 most connected nodes
-        top_connected_nodes_text = "<br>".join(top_connected_nodes) if top_connected_nodes else "None"
-        #node_trace['text'] += (node,)
-        node_trace['text'] += ([f'Node: {node}<br>Connections: {len(connected_nodes)}<br>Top Connected Nodes: {top_connected_nodes_text}'],)  # Adjusting node text
-        node_trace['marker']['color'] += (graph.nodes[node].get('size', 1) * 10,)  # Adjusting node color
+        top_connected_nodes_text = "<br>".join(connected_nodes[:10]) if connected_nodes else "None"
+        node_trace['text'] += ([f'Node: {node}<br>Category: {category}<br>Connections: {len(connected_nodes)}<br>Top Connected Nodes: {top_connected_nodes_text}'],) 
 
-    fig = go.Figure(data=[*edge_trace, node_trace],
-                    layout=go.Layout(title='Network Graph', showlegend=False, hovermode='closest', 
-                                     margin=dict(b=20, l=5, r=5, t=40),
-                                     xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-                                     yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
-                    )
+    # Create legend manually with separate scatter plots representing each category
+    legend_traces = []
+    for category, color in category_to_color.items():
+        legend_traces.append(
+            go.Scatter(x=[None], y=[None], mode='markers', marker=dict(size=10, color=color), name=category, showlegend=True)
+        )
+    
+    # Create the Plotly figure with the network graph and the category-based legend
+    fig = go.Figure(
+        data=[*edge_trace, node_trace, *legend_traces], 
+        layout=go.Layout(
+            title='Network Graph with Legend',
+            showlegend=True,
+            hovermode='closest',
+            margin=dict(b=20, l=5, r=5, t=40),
+            xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+            yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)
+        )
+    )
+
     return fig
 
 
@@ -158,9 +236,10 @@ def location_based_graph(df, location):
     words_count_1, words_cps_1, words_count_2, words_cps_2, words_count_3, words_cps_3 = create_individual_location_data(df)
     words_count_1_location, a, words_count_2_location, b, words_count_3_location, c = create_individual_location_data(df_location)    
     word_counts_df_overall = create_aggregated_data(words_count_1_location, words_count_2_location, words_count_3_location)
+    word_counts_df_overall_categorised = category_mapping(word_counts_df_overall)
     words_cps_m, words_cps_f = create_gender_data(df_location)
-    graph = create_graph_from_co_occurrence(co_occurrence_overall, word_counts_df_overall)
-    return graph, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f
+    graph = create_graph_from_co_occurrence(co_occurrence_overall, word_counts_df_overall_categorised)
+    return graph, word_counts_df_overall_categorised, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f
 
 
 def get_tag_data_without_label(tag, *dfs):
@@ -183,11 +262,12 @@ co_occurrence_overall = get_co_occurrence(df)
 words_count_1, words_cps_1, words_count_2, words_cps_2, words_count_3, words_cps_3 = create_individual_location_data(df)
 word_counts_df_overall = create_aggregated_data(words_count_1, words_count_2, words_count_3)
 words_cps_m, words_cps_f = create_gender_data(df)
-graph = create_graph_from_co_occurrence(co_occurrence_overall, word_counts_df_overall)
+word_counts_df_overall_categorised = category_mapping(word_counts_df_overall)
+graph = create_graph_from_co_occurrence(co_occurrence_overall, word_counts_df_overall_categorised)
 
-#graph, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df, 'park')
-#graph, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df, 'chase')
-#graph, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df, 'dumbo')
+#graph, word_counts_df_overall, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df, 'park')
+#graph, word_counts_df_overall, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df, 'chase')
+#graph, word_counts_df_overall, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df, 'dumbo')
 
 
 #Create Dash app
@@ -199,7 +279,7 @@ app.layout = html.Div([
     html.Div([
         dcc.Graph(
             id='network-graph',
-            figure=plot_network(graph),
+            figure=plot_network(graph, word_counts_df_overall_categorised),
             hoverData={'points': [{'text': 'example_tag'}]}  # Default hover data
         )
     ], style={'width': '70%', 'display': 'inline-block'}),
