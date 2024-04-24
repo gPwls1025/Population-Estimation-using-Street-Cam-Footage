@@ -253,8 +253,31 @@ def get_tag_data_without_label(tag, *dfs):
             data[df.name.capitalize()] = 0
     return data
 
+# HAR - Human Activity Recognition Graph
+# for radio button, if you want entire data, pass None as location_id, if you want to specify location, pass location_id=1 or 2 or 3
+def create_har_df(df, human_actions, location_id=None):
+    if location_id is not None:
+        filtered_df = df[df['locationID'] == location_id]
+    else:
+        filtered_df = df.copy()  # Use the entire DataFrame if no location_id is provided
+    
+    word_counts_df = get_counts_df(filtered_df)
+    har_df = word_counts_df[word_counts_df['Tag'].isin(human_actions)].reset_index(drop=True)
+    
+    return har_df
+
+def create_har_normalize_counts(df):
+    total_counts = df['RAM_Count'].sum()
+    df['normalized_count'] = df['RAM_Count'] / total_counts
+    return df
+
+def plot_har_bar_graph(df):
+    fig = go.Figure([go.Bar(x=df['Tag'], y=df['normalized_count'])])
+    fig.update_layout(title='Normalized Occurrences of Human Action Tags', xaxis_title='Tag', yaxis_title='Normalized Occurrences')
+    return fig
+
 # Data processing logic for co-occurrence graph
-df = pd.read_csv('YOLO+RAM_merged.csv')
+df = pd.read_csv('/Users/hp/Population-Estimation-using-Street-Cam-Footage/YOLO+RAM_merged.csv')
 df.drop(columns=['Unnamed: 0'], inplace=True)
 
 # Create a co-occurrence matrix and word counts
@@ -269,6 +292,14 @@ graph = create_graph_from_co_occurrence(co_occurrence_overall, word_counts_df_ov
 #graph, word_counts_df_overall, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df, 'chase')
 #graph, word_counts_df_overall, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df, 'dumbo')
 
+# create HAR bar graph
+human_actions = ['drive','ride','cross','walk','pick up','stand','carry','catch','jog','spray','push','skate','wash','travel',
+                 'clean','wear','crowded','take','run','swab','drag','play','check','stretch']
+# Change this to the desired location ID or None for all locations
+location_id = 1  
+har_df = create_har_df(df, human_actions, location_id)
+normalized_har_df = create_har_normalize_counts(har_df)
+har_fig = plot_har_bar_graph(normalized_har_df)
 
 #Create Dash app
 app = Dash(__name__)
@@ -281,6 +312,14 @@ app.layout = html.Div([
             id='network-graph',
             figure=plot_network(graph, word_counts_df_overall_categorised),
             hoverData={'points': [{'text': 'example_tag'}]}  # Default hover data
+        )
+    ], style={'width': '70%', 'display': 'inline-block'}),
+
+    # placeholder for the HAR bar chart
+    html.Div([
+        dcc.Graph(
+            id='har_bar_graph',
+            figure=plot_har_bar_graph(normalized_har_df)
         )
     ], style={'width': '70%', 'display': 'inline-block'}),
 
