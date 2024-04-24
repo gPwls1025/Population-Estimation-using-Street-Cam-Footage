@@ -24,59 +24,49 @@ location_labels = {'All Locations': 'All Locations', 'Park': 1, 'Chase': 2, 'Dum
 # Define the layout of the app
 app.layout = html.Div([
     html.H1('VizML Dashboard', style={'text-align': 'center'}),
-    dcc.Dropdown(
-        id='location-dropdown',
-        options=[{'label': loc, 'value': value} for loc, value in location_labels.items()],
-        value='All',
-        style={'width': '50%'}
-    ),
+    dcc.Location(id='url', refresh=False),
     html.Div([
-        dcc.Graph(id='network-graph', style={'width': '60%', 'display': 'inline-block'}),
-        dcc.Graph(id='bar-chart', style={'width': '40%', 'display': 'inline-block'})
-    ])
+        dcc.Dropdown(
+            id='location-dropdown',
+            options=[{'label': label, 'value': value} for label, value in location_labels.items()],
+            value='All',
+            style={'width': '100%'}
+        )
+    ], style={'padding': 10}),
+
+    html.Div(id='graphs-container')
 ])
 
-# Callback to update the network graph based on location selection
+# Callback to update graphs based on selected location
 @app.callback(
-    Output('network-graph', 'figure'),
+    Output('graphs-container', 'children'),
     [Input('location-dropdown', 'value')]
 )
-def update_network_graph(selected_location):
-    # if selected_location == 'All Locations':
-    filtered_data = word_counts_df_filtered
-    # else:
-    #     filtered_data = word_counts_df_filtered[word_counts_df_filtered['location'] == selected_location]
-    
-    graph = create_graph_from_co_occurrence(co_occurrence_overall, filtered_data)
-    return plot_network(graph, "Network Graph for " + selected_location)
+def update_graphs(selected_location):
+    if selected_location == 'All':
+        df_filtered = df
+    else:
+        df_filtered = df[df['location'] == selected_location.lower()]
 
-# Callback to update the bar chart based on node hover in the network graph
-@app.callback(
-    Output('bar-chart', 'figure'),
-    [Input('network-graph', 'hoverData'), Input('location-dropdown', 'value')]
-)
-def update_bar_chart(hover_data, selected_location):
-    if hover_data and 'points' in hover_data:
-        node_tag = hover_data['points'][0]['text'].split("<br>")[0].replace("Node: ", "").strip()
-        tag_data = word_counts_df_filtered[word_counts_df_filtered['Tag'] == node_tag]
+    # Network graph
+    graph_overall = create_graph_from_co_occurrence(co_occurrence_overall, word_counts_df_filtered)
+    network_fig = plot_network(graph_overall, "Network Graph of Street Cam Footage")
 
-        # if selected_location != 'All':
-        #     tag_data = tag_data[tag_data['location'] == selected_location]
-        
-        fig = go.Figure(
-            data=[
-                go.Bar(x=tag_data['Tag'], y=tag_data['RAM_Count'], marker=dict(color='blue'))
-            ],
-            layout=go.Layout(
-                title=f'RAM Count for Tag: {node_tag}',
-                xaxis=dict(title='Tag'),
-                yaxis=dict(title='RAM Count'),
-                showlegend=False
-            )
-        )
-        return fig
+    # Bar chart
+    if selected_location == 'All':
+        fig = px.bar(word_counts_df_filtered, x='Tag', y='RAM_Count', title='# of Tags by Location')
+    else:
+        fig = plot_tag_counts_by_location(df_filtered, selected_location)
 
-    return go.Figure()  # Return an empty figure if no node is hovered over
+    return [
+        html.Div([
+            dcc.Graph(id='network-graph', figure=network_fig, style={'height': '500px', 'width': '100%'})
+        ], style={'display': 'inline-block', 'width': '60%'}),
+        html.Div([
+            dcc.Graph(id='tag-counts-graph', figure=fig, style={'height': '200px', 'width': '100%'})
+        ], style={'display': 'inline-block', 'width': '40%'})
+    ]
 
+# Run the app
 if __name__ == '__main__':
     app.run_server(debug=True)
