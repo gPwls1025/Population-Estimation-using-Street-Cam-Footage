@@ -2,7 +2,10 @@ import pandas as pd
 import plotly.graph_objects as go
 import networkx as nx
 import json
-from dash import Dash, html, dcc, callback, Input, Output
+import dash_bootstrap_components as dbc
+import plotly.express as px
+from dash_bootstrap_templates import load_figure_template
+from dash import Dash, html, dcc, callback, Input, Output, State
 from plotly.graph_objects import Figure
 
 
@@ -71,8 +74,9 @@ def create_aggregated_data(words_count_1, words_count_2, words_count_3):
 
 
 def create_gender_df(df):
-    df.loc[:, 'man'] = df['RAM_Tags'].str.contains(r'\bman\b|\bboy\b', case=False, regex=True).astype(int).copy()
-    df.loc[:, 'woman'] = df['RAM_Tags'].str.contains(r'\bwoman\b|\bgirl\b', case=False, regex=True).astype(int).copy()
+    df = df.copy()
+    df.loc[:, 'man'] = df['RAM_Tags'].str.contains(r'\bman\b|\bboy\b', case=False, regex=True).astype(int)
+    df.loc[:, 'woman'] = df['RAM_Tags'].str.contains(r'\bwoman\b|\bgirl\b', case=False, regex=True).astype(int)
     man_df = df[(df['man'] == 1) & (df['woman'] == 0)]
     woman_df = df[(df['man'] == 0) & (df['woman'] == 1)]
     return man_df, woman_df
@@ -218,6 +222,7 @@ def plot_network(graph, word_counts_df):
     fig = go.Figure(
         data=[*edge_trace, node_trace, *legend_traces], 
         layout=go.Layout(
+            template=theme,
             title='Network Graph with Legend',
             showlegend=True,
             hovermode='closest',
@@ -226,11 +231,10 @@ def plot_network(graph, word_counts_df):
             yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)
         )
     )
-
     return fig
 
 
-def location_based_graph(df, location=None):
+def create_network_and_comatrix(df, location=None):
     df_location = df[df['location'] == location] if location else df
     co_occurrence_overall = get_co_occurrence(df_location)
     words_count_1_location, words_cps_1, words_count_2_location, words_cps_2, words_count_3_location, words_cps_3 = create_individual_location_data(df_location)
@@ -252,28 +256,139 @@ def get_tag_data_without_label(tag, *dfs):
             data[df.name.capitalize()] = 0
     return data
 
+# HAR - Human Activity Recognition Graph
+def create_har_df(df, human_actions, location=None):
+    if location is not None:
+        filtered_df = df[df['location'] == location]
+    else:
+        filtered_df = df.copy()  # Use the entire DataFrame if no location_id is provided
+    
+    word_counts_df = get_counts_df(filtered_df)
+    har_df = word_counts_df[word_counts_df['Tag'].isin(human_actions)].reset_index(drop=True)
+    
+    return har_df
+
+def create_har_normalize_counts(df):
+    total_counts = df['RAM_Count'].sum()
+    df['normalized_count'] = df['RAM_Count'] / total_counts
+    return df
+
+def plot_har_bar_graph(df):
+    fig = go.Figure([go.Bar(x=df['Tag'], y=df['normalized_count'])])
+    fig.update_layout(title='Normalized Occurrences of Human Action Tags', xaxis_title='Tag', yaxis_title='Normalized Occurrences', template=theme)
+    return fig
+
+def process_interaction():
+    chase_df = pd.read_csv('data/chase_cooccurrence.csv', index_col=0)
+    park_df = pd.read_csv('data/park_cooccurrence.csv', index_col=0)
+    dumbo_df = pd.read_csv('data/dumbo_cooccurrence.csv', index_col=0)
+
+    people = [
+        'baby',
+        'boy',
+        'businessman',
+        'child',
+        'construction worker',
+        'couple',
+        'daughter',
+        'girl',
+        'man',
+        'mother',
+        'nun',
+        'officer',
+        'pedestrian',
+        'person',
+        'protester',
+        'runner',
+        'skater',
+        'skateboarder',
+        'student',
+        'woman'
+    ]
+
+    chase_car_people_interaction = chase_df.loc['car', people].sum()
+    park_car_people_interaction = park_df.loc['car', people].sum()
+    dumbo_car_people_interaction = dumbo_df.loc['car', people].sum()
+
+    total_interaction = chase_car_people_interaction + park_car_people_interaction + dumbo_car_people_interaction
+
+    chase_interaction_val =  chase_car_people_interaction/ total_interaction
+    park_interaction_val = park_car_people_interaction / total_interaction
+    dumbo_interaction_val = dumbo_car_people_interaction / total_interaction
+    
+    return chase_interaction_val, park_interaction_val, dumbo_interaction_val
+    
+def plot_interaction_pie(chase, park, dumbo):
+    data = {
+        'Categories': ['chase', 'park', 'dumbo'],
+        'Values': [chase, park, dumbo]
+    }
+
+    df_data = pd.DataFrame(data)
+
+    fig = px.pie(
+        df_data,
+        names='Categories', 
+        values='Values', 
+        title='People to Vehicle Interaction',
+        color_discrete_sequence=px.colors.qualitative.Plotly,
+        
+    )
+
+    fig.update_traces(textposition='inside', textinfo='percent+label')
+    return fig
+
+
+# I am processing all the required dataframes here
+def process_dfs(df):
+    # create HAR bar graph
+    human_actions = ['drive','ride','cross','walk','pick up','stand','carry','catch','jog','spray','push','skate','wash','travel',
+                    'clean','wear','crowded','take','run','swab','drag','play','check','stretch']
+
+    # Precompute graphs and data for each location
+    network_dfs = {}
+    har_dfs = {}
+    locations = df['location'].unique()
+
+    for loc in locations:
+        graph, word_counts_df_filtered_categorized, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = create_network_and_comatrix(df, loc)
+        network_dfs[loc] = (graph, word_counts_df_filtered_categorized, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f)
+
+        har_df = create_har_df(df, human_actions, loc)
+        normalized_har_df = create_har_normalize_counts(har_df)
+        har_dfs[loc] = normalized_har_df
+    
+    # Also do it for all location
+    graph, word_counts_df_filtered_categorized, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = create_network_and_comatrix(df)
+    network_dfs['all'] = (graph, word_counts_df_filtered_categorized, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f)
+
+    har_df = create_har_df(df, human_actions)
+    normalized_har_df = create_har_normalize_counts(har_df)
+    har_dfs['all'] = normalized_har_df
+    
+    chase_interaction, park_interaction, dumbo_interaction = process_interaction()
+    return network_dfs, har_dfs, chase_interaction, park_interaction, dumbo_interaction
+
+
 # Data processing logic for co-occurrence graph
 df = pd.read_csv('data/YOLO+RAM_merged.csv')
 df.drop(columns=['Unnamed: 0'], inplace=True)
 
-# Precompute graphs and data for each location
-precomputed_results = {}
-locations = df['location'].unique()
+network_dfs, har_dfs, chase_interaction, park_interaction, dumbo_interaction = process_dfs(df)
 
-for loc in locations:
-    graph, word_counts_df_filtered_categorized, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df, loc)
-    precomputed_results[loc] = (graph, word_counts_df_filtered_categorized, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f)
-
-# Also do it for all location
-graph, word_counts_df_filtered_categorized, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = location_based_graph(df)
-precomputed_results['all'] = (graph, word_counts_df_filtered_categorized, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f)
-
-#Create Dash app
-app = Dash(__name__)
+# Let's create template 
+app = Dash(__name__, external_stylesheets=[dbc.themes.LUX])
+theme = "LUX"
+load_figure_template(theme)
 
 # Layout with network graph and two bar charts
 app.layout = html.Div([
-    html.H1("Interactive Network Graph with Multiple Hover-based Bar Charts"),
+    # Title
+    html.Div(
+        html.H1("Interactive Network Graph with Multiple Hover-based Bar Charts"),
+        style={'margin-top': '20px', 'margin-left': '20px'}
+    ),
+    # Dropdown
     html.Div([
         dcc.Dropdown(
             id='location-dropdown',
@@ -286,77 +401,128 @@ app.layout = html.Div([
             value='all',  # Default value to show all locations
             placeholder="Select a location",
             clearable=False,
-            style={'width': '50%', 'padding': '10px'}
+            style={'width': '50%', 'padding': '20px', 'display': 'inline-block'}
         )
     ]),
+    # Network
     html.Div([
         dcc.Graph(
             id='network-graph',
-            figure=plot_network(precomputed_results['all'][0], precomputed_results['all'][1]),
+            figure=plot_network(network_dfs['all'][0], network_dfs['all'][1]),
             hoverData={'points': [{'text': 'example_tag'}]}  # Default hover data
         )
     ], style={'width': '70%', 'display': 'inline-block'}),
-    
+    # Interactive barss
     html.Div([
-        dcc.Graph(id='bar-graph-1'),  # Placeholder for the first bar chart
-        dcc.Graph(id='bar-graph-2')   # Placeholder for the second bar chart
-    ], style={'width': '30%', 'display': 'inline-block'})
+            dcc.Graph(id='bar-graph-1', style={'width': '100%', 'display': 'inline-block', 'height': '300px'}),
+            dcc.Graph(id='bar-graph-2', style={'width': '100%', 'display': 'inline-block', 'height': '300px'})
+        ], style={'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'}),
+    # HAR
+    html.Div([
+        dcc.Graph(
+            id='har-graph',
+            figure=plot_har_bar_graph(har_dfs['all'])
+        )
+    ], style={'width': '70%', 'display': 'inline-block'}),
+    # People-Car Interaction with initial pie chart
+    html.Div(
+        id='interaction-display', 
+        children=dcc.Graph(id='interaction-pie-chart', figure=plot_interaction_pie(chase_interaction, park_interaction, dumbo_interaction)),
+        style={'width': '30%', 'display': 'inline-block'},
+        
+    ),
+
 ])
 
+##########################
+### Plot Network graph ###
+##########################
 @app.callback(
     Output('network-graph', 'figure'),
     [Input('location-dropdown', 'value')]
 )
 def update_network_graph(selected_location):
     
-    graph, word_counts_df_filtered_categorized, words_cps_1, words_cps_2, words_cps_3, words_cps_m, words_cps_f = precomputed_results[selected_location]
+    graph, word_counts_df_filtered_categorized, words_cps_1_new, words_cps_2_new, words_cps_3_new, words_cps_m_new, words_cps_f_new = network_dfs[selected_location]
     
     return plot_network(graph, word_counts_df_filtered_categorized)
 
-
-# Callback to update both bar charts based on hover data from the network graph
-@callback(
-    [Output('bar-graph-1', 'figure'), Output('bar-graph-2', 'figure')],
-    [Input('network-graph', 'hoverData')]
+# Callback for the conditional People-Car Interaction display
+@app.callback(
+    Output('interaction-display', 'children'),
+    [Input('location-dropdown', 'value')]
 )
-def update_bar_charts(hover_data):
-    tag = hover_data['points'][0]['text'].split("<br>")[0].replace("Node: ", "").strip("['") if hover_data and 'points' in hover_data else None
-    
-    if tag:
-        # Get data for the first bar chart
-        tag_data_location = get_tag_data_without_label(tag, words_cps_1, words_cps_2, words_cps_3)
-        
-        # Generate the first bar chart
-        bar_fig_1 = go.Figure(
-            data=[
-                go.Bar(x=list(tag_data_location.keys()), y=list(tag_data_location.values()), marker=dict(color=['red', 'green', 'black']))
-            ],
-            layout=go.Layout(
-                title=f'RAM Count for Tag: {tag}',
-                xaxis=dict(title='Location'),
-                yaxis=dict(title='Count per Second'),
-                showlegend=False
-            )
-        )
-
-        # Generate the second bar chart (assuming you have another data source)
-        tag_data_gender = get_tag_data_without_label(tag, words_cps_m, words_cps_f)
-        
-        bar_fig_2 = go.Figure(
-            data=[
-                go.Bar(x=list(tag_data_gender.keys()), y=list(tag_data_gender.values()), marker=dict(color=['blue', 'pink']))
-            ],
-            layout=go.Layout(
-                title=f'RAM Count for Tag: {tag}',
-                xaxis=dict(title='Gender'),
-                yaxis=dict(title='Count per Second'),
-                showlegend=False
-            )
-        )
-
-        return [bar_fig_1, bar_fig_2]
+def update_interaction_display(selected_location):
+    if selected_location == 'all':
+        # Return the pie chart
+        pie_chart_figure = plot_interaction_pie(chase_interaction, park_interaction, dumbo_interaction)
+        return dcc.Graph(id='interaction-pie-chart', figure=pie_chart_figure)
     else:
-        return [go.Figure(), go.Figure()]  # Empty figures if no tag is hovered over
+        # Return text
+        interaction_val = {
+            'park': park_interaction,
+            'chase': chase_interaction,
+            'dumbo': dumbo_interaction
+        }[selected_location]
+        return html.Div(
+            f'Car to People Interaction for {selected_location.capitalize()}: {interaction_val:.2%}',
+            style={
+                'fontSize': '24px',  
+                'textAlign': 'center',  
+                'margin': '10px 0',  
+                'position': 'relative',
+                'top': '-200px' 
+            }
+        )
 
+
+##########################
+### Plot HAR bar graph ###
+##########################
+@app.callback(
+    Output('har-graph', 'figure'),
+    [Input('location-dropdown', 'value')]
+)
+def update_additional_graph(selected_location):
+    # Example: Suppose you want to create a simple histogram of the 'RAM_Count'
+    if selected_location == 'all':
+        df_to_plot = har_dfs['all']
+    else:
+        df_to_plot = har_dfs[selected_location]
+
+    return plot_har_bar_graph(df_to_plot)
+
+###############################################
+### Interactive bar charts on network graph ###
+###############################################
+# Callback to update bar charts based on hover data from network graph
+@app.callback(
+    [Output('bar-graph-1', 'figure'), Output('bar-graph-2', 'figure')],
+    [Input('network-graph', 'hoverData')],
+    [State('location-dropdown', 'value')]
+)
+def update_bar_charts(hover_data, selected_location):
+    if hover_data:
+        tag = hover_data['points'][0]['text'].split("<br>")[0].replace("Node: ", "").strip("['") if 'points' in hover_data and hover_data['points'] else None
+        if tag:
+            # Fetch the necessary data using the currently selected location
+            network_data = network_dfs[selected_location] if selected_location in network_dfs else network_dfs['all']
+            tag_data_gender = get_tag_data_without_label(tag, network_data[5], network_data[6])
+            
+            network_data = network_dfs['all']
+            tag_data_location = get_tag_data_without_label(tag, network_data[2], network_data[3], network_data[4])
+
+            bar_fig_1 = go.Figure(data=[
+                go.Bar(x=list(tag_data_location.keys()), y=list(tag_data_location.values()), marker=dict(color=['red', 'green', 'black']))
+            ])
+            
+            bar_fig_2 = go.Figure(data=[
+                go.Bar(x=list(tag_data_gender.keys()), y=list(tag_data_gender.values()), marker=dict(color=['blue', 'pink']))
+            ])
+            
+            return [bar_fig_1, bar_fig_2]
+    return [go.Figure(), go.Figure()]  # Return empty figures if no hover data or tag not found
+
+# Run the Dash app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run_server(debug=True)
