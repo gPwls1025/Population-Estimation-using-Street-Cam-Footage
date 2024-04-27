@@ -169,7 +169,7 @@ def create_graph_from_co_occurrence(co_occurrence_matrix, word_counts_df):
     return G
 
 
-def plot_network(graph, word_counts_df):
+def plot_network(graph, word_counts_df, height=650):
     # Define category-to-color mapping
     category_to_color = {
         'HAR': 'red', 'Vehicle': 'green', 'People': 'blue', 'Urban Infrastructure': 'black',
@@ -228,7 +228,8 @@ def plot_network(graph, word_counts_df):
             hovermode='closest',
             margin=dict(b=20, l=5, r=5, t=40),
             xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-            yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)
+            yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+            height=height
         )
     )
     return fig
@@ -279,9 +280,9 @@ def plot_har_bar_graph(df):
     return fig
 
 def process_interaction():
-    chase_df = pd.read_csv('data/chase_cooccurrence.csv', index_col=0)
-    park_df = pd.read_csv('data/park_cooccurrence.csv', index_col=0)
-    dumbo_df = pd.read_csv('data/dumbo_cooccurrence.csv', index_col=0)
+    chase_df = pd.read_csv('/Users/hp/Population-Estimation-using-Street-Cam-Footage/chase_cooccurrence.csv', index_col=0)
+    park_df = pd.read_csv('/Users/hp/Population-Estimation-using-Street-Cam-Footage/park_cooccurrence.csv', index_col=0)
+    dumbo_df = pd.read_csv('/Users/hp/Population-Estimation-using-Street-Cam-Footage/dumbo_cooccurrence.csv', index_col=0)
 
     people = [
         'baby',
@@ -371,7 +372,7 @@ def process_dfs(df):
 
 
 # Data processing logic for co-occurrence graph
-df = pd.read_csv('data/YOLO+RAM_merged.csv')
+df = pd.read_csv('/Users/hp/Population-Estimation-using-Street-Cam-Footage/YOLO+RAM_merged.csv')
 df.drop(columns=['Unnamed: 0'], inplace=True)
 
 network_dfs, har_dfs, chase_interaction, park_interaction, dumbo_interaction = process_dfs(df)
@@ -385,8 +386,8 @@ load_figure_template(theme)
 app.layout = html.Div([
     # Title
     html.Div(
-        html.H1("Interactive Network Graph with Multiple Hover-based Bar Charts"),
-        style={'margin-top': '20px', 'margin-left': '20px'}
+        html.H1("Population Estimation using Street Camera Footage"),
+        style={'margin-top': '20px', 'margin-left': '160px'}
     ),
     # Dropdown
     html.Div([
@@ -412,7 +413,7 @@ app.layout = html.Div([
             hoverData={'points': [{'text': 'example_tag'}]}  # Default hover data
         )
     ], style={'width': '70%', 'display': 'inline-block'}),
-    # Interactive barss
+    # Interactive bars
     html.Div([
             dcc.Graph(id='bar-graph-1', style={'width': '100%', 'display': 'inline-block', 'height': '300px'}),
             dcc.Graph(id='bar-graph-2', style={'width': '100%', 'display': 'inline-block', 'height': '300px'})
@@ -515,10 +516,22 @@ def update_bar_charts(hover_data, selected_location):
             bar_fig_1 = go.Figure(data=[
                 go.Bar(x=list(tag_data_location.keys()), y=list(tag_data_location.values()), marker=dict(color=['red', 'green', 'black']))
             ])
+
+            bar_fig_1.update_layout(
+                title={'text': 'Location Distribution', 'y':0.9, 'x':0.5, 'xanchor': 'center', 'yanchor': 'top'},
+                xaxis_title = 'Location',
+                yaxis_title = 'Counts'
+            )
             
             bar_fig_2 = go.Figure(data=[
                 go.Bar(x=list(tag_data_gender.keys()), y=list(tag_data_gender.values()), marker=dict(color=['blue', 'pink']))
             ])
+
+            bar_fig_2.update_layout(
+                title={'text': 'Gender Distribution', 'y':0.9, 'x':0.5, 'xanchor': 'center', 'yanchor': 'top'},
+                xaxis_title = 'Gender',
+                yaxis_title = 'Counts'
+            )
             
             return [bar_fig_1, bar_fig_2]
     return [go.Figure(), go.Figure()]  # Return empty figures if no hover data or tag not found
