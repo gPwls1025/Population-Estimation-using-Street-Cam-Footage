@@ -633,7 +633,7 @@ def update_bar_charts(hover_data, selected_location):
             bar_fig_1.update_layout(
                 title={'text': 'Location Distribution', 'y':0.9, 'x':0.5, 'xanchor': 'center', 'yanchor': 'top'},
                 xaxis_title = 'Location',
-                yaxis_title = 'Counts'
+                yaxis_title = 'Counts/second'
             )
             
             bar_fig_2 = go.Figure(data=[
@@ -643,7 +643,7 @@ def update_bar_charts(hover_data, selected_location):
             bar_fig_2.update_layout(
                 title={'text': 'Gender Distribution', 'y':0.9, 'x':0.5, 'xanchor': 'center', 'yanchor': 'top'},
                 xaxis_title = 'Gender',
-                yaxis_title = 'Counts'
+                yaxis_title = 'Counts/second'
             )
             
             return [bar_fig_1, bar_fig_2]
