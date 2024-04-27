@@ -378,16 +378,125 @@ df.drop(columns=['Unnamed: 0'], inplace=True)
 network_dfs, har_dfs, chase_interaction, park_interaction, dumbo_interaction = process_dfs(df)
 
 # Let's create template 
-app = Dash(__name__, external_stylesheets=[dbc.themes.LUX])
-theme = "LUX"
+app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+theme = "BOOTSTRAP"
 load_figure_template(theme)
+
+title = dcc.Markdown(
+    """
+### Color - Background
+------------
+"""
+)
+
+color_bg = html.Div(
+    [
+        html.P("bg-primary", className="bg-primary"),
+        html.P("bg-secondary", className="bg-secondary"),
+        html.P("bg-success", className="bg-success"),
+        html.P("bg-danger", className="bg-danger"),
+        html.P("bg-warning", className="bg-warning"),
+        html.P("bg-info", className="bg-info"),
+        html.P("bg-light", className="bg-light"),
+        html.P("bg-dark", className="bg-dark"),
+        html.P("bg-transparent", className="bg-transparent"),
+    ]
+)
+
+color_bg_gradient = html.Div(
+    [
+        html.P("bg-primary text-white py-4", className="bg-primary text-white py-4"),
+        html.P(
+            "bg-primary  bg-gradient text-white py-4",
+            className="bg-primary bg-gradient text-white py-4",
+        ),
+    ]
+)
+
+
+border_direction = dbc.Card(
+    [
+        dbc.CardHeader("Border Direction"),
+        html.Div(
+            [
+                html.P("border ", className="border "),
+                html.P("border-top ", className="border-top "),
+                html.P("border-end ", className="border-end "),
+                html.P("border-bottom ", className="border-bottom "),
+                html.P("border-start ", className="border-start "),
+            ],
+            className="p-4",
+        ),
+    ],
+    className="my-4",
+)
+
+
+border_direction_0 = dbc.Card(
+    [
+        dbc.CardHeader("Border Direction 0"),
+        html.Div(
+            [
+                html.P("border border-0", className="border border-0 "),
+                html.P("border border-top-0 ", className="border border-top-0 "),
+                html.P("border border-end-0 ", className="border border-end-0 "),
+                html.P("border border-bottom-0 ", className="border border-bottom-0 "),
+                html.P("border border-start-0 ", className="border border-start-0 "),
+            ],
+            className="p-4",
+        ),
+    ],
+    className="my-4",
+)
+
+
+border_color = dbc.Card(
+    [
+        dbc.CardHeader("Border Color"),
+        html.Div(
+            [
+                html.P("border border-primary ", className="border border-primary "),
+                html.P(
+                    "border border-secondary ", className="border border-secondary "
+                ),
+                html.P("border border-success ", className="border border-success "),
+                html.P("border border-danger ", className="border border-danter "),
+                html.P("border border-warning ", className="border border-warning "),
+                html.P("border border-info ", className="border border-info "),
+                html.P("border border-light", className="border border-light "),
+                html.P("border border-dark  ", className="border border-dark "),
+                html.P("border border-white  ", className="border border-white "),
+            ],
+            className="p-4",
+        ),
+    ],
+    className="my-4",
+)
+
+border_size = dbc.Card(
+    [
+        dbc.CardHeader("Border Size"),
+        html.Div(
+            [
+                html.P("border border-1 ", className="border border-1 "),
+                html.P("border border-2 ", className="border border-2 "),
+                html.P("border border-3 ", className="border border-3 "),
+                html.P("border border-4 ", className="border border-4 "),
+                html.P("border border-5 ", className="border border-5 "),
+            ],
+            className="p-4",
+        ),
+    ],
+    className="my-4",
+)
 
 # Layout with network graph and two bar charts
 app.layout = html.Div([
     # Title
     html.Div(
         html.H1("Population Estimation using Street Camera Footage"),
-        style={'margin-top': '20px', 'margin-left': '160px'}
+        className="bg-secondary bg-gradient text-center text-white py-4"
+        # style={'padding': '20px', 'margin-left': '160px', 'margin-top': '20px'} 
     ),
     # Dropdown
     html.Div([
@@ -402,7 +511,7 @@ app.layout = html.Div([
             value='all',  # Default value to show all locations
             placeholder="Select a location",
             clearable=False,
-            style={'width': '50%', 'padding': '20px', 'display': 'inline-block'}
+            style={'width': '50%', 'display': 'inline-block', 'margin-top': '5px'} # 'padding':'20px'
         )
     ]),
     # Network
@@ -412,25 +521,29 @@ app.layout = html.Div([
             figure=plot_network(network_dfs['all'][0], network_dfs['all'][1]),
             hoverData={'points': [{'text': 'example_tag'}]}  # Default hover data
         )
-    ], style={'width': '70%', 'display': 'inline-block'}),
+    ], 
+        style={'width': '70%', 'display': 'inline-block'},
+        className="border border-light border-4"),
     # Interactive bars
     html.Div([
             dcc.Graph(id='bar-graph-1', style={'width': '100%', 'display': 'inline-block', 'height': '300px'}),
             dcc.Graph(id='bar-graph-2', style={'width': '100%', 'display': 'inline-block', 'height': '300px'})
-        ], style={'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'}),
+        ], style={'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'},
+        className="border border-light border-4"),
     # HAR
     html.Div([
         dcc.Graph(
             id='har-graph',
             figure=plot_har_bar_graph(har_dfs['all'])
         )
-    ], style={'width': '70%', 'display': 'inline-block'}),
+    ], style={'width': '70%', 'display': 'inline-block'},
+    className="border border-light border-4"),
     # People-Car Interaction with initial pie chart
     html.Div(
         id='interaction-display', 
         children=dcc.Graph(id='interaction-pie-chart', figure=plot_interaction_pie(chase_interaction, park_interaction, dumbo_interaction)),
         style={'width': '30%', 'display': 'inline-block'},
-        
+        className="border border-light border-4"
     ),
 
 ])
