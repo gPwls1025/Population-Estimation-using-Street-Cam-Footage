@@ -6,13 +6,13 @@ This paper investigates the characteristics of urban environments using the Stre
 ![screenshot](dashboard.png)
 
 ### Visualisation Design for the project
-The dashboard integrates visualizations for location-specific and gender-based tag distributions. Adjacent to the network graph, a chart displays the occurrence of each tag across the three locations (Chase, Dumbo, Park). This allows users to identify variations in object presence based on the location. Similarly, another chart depicts the distribution of tags by gender, providing insights into potential demographic patterns associated with specific objects. \n
+The dashboard integrates visualizations for location-specific and gender-based tag distributions. Adjacent to the network graph, a chart displays the occurrence of each tag across the three locations (Chase, Dumbo, Park). This allows users to identify variations in object presence based on the location. Similarly, another chart depicts the distribution of tags by gender, providing insights into potential demographic patterns associated with specific objects. 
 
-The lower section of the dashboard presents a bar chart that visualizes the distribution of human actions (HAR) detected within the selected location. This chart allows users to quickly assess the prevalence of various human activities (e.g., walk, drive) at a specific intersection. \n
+The lower section of the dashboard presents a bar chart that visualizes the distribution of human actions (HAR) detected within the selected location. This chart allows users to quickly assess the prevalence of various human activities (e.g., walk, drive) at a specific intersection. 
 
-A pie chart positioned on the bottom right corner of the dashboard highlights the co-occurrence of "people" and "car" tags across the three locations. This visualization helps users understand the frequency with which pedestrians and vehicles share the same space, potentially indicating areas with a higher risk of accidents. \n
+A pie chart positioned on the bottom right corner of the dashboard highlights the co-occurrence of "people" and "car" tags across the three locations. This visualization helps users understand the frequency with which pedestrians and vehicles share the same space, potentially indicating areas with a higher risk of accidents.
 
-The dashboard offers the flexibility to switch between different locations (Overall, Chase, Dumbo, Park) using a designated filter. Selecting a specific location updates the network graph, human action distribution, and location/gender distribution charts accordingly. This allows users to conduct focused analyses and gain detailed insights for each intersection. \n
+The dashboard offers the flexibility to switch between different locations (Overall, Chase, Dumbo, Park) using a designated filter. Selecting a specific location updates the network graph, human action distribution, and location/gender distribution charts accordingly. This allows users to conduct focused analyses and gain detailed insights for each intersection.
 
 An additional feature is that all the tags have been grouped into one of these 10 categories so we can even leverage insights as a group rather than individual tags. The categories include Urban Infrastructure, People, Vehicles, Personal Items, etc.
 
